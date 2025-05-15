@@ -1,0 +1,31 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  @include mixins.flex-space-between;
+  padding: 16px 180px;
+}
+
+.btn-nav {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(60px);
+  padding: 15.5px 24px;
+  width: fit-content;
+  border-radius: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  color: variables.$white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Emblema One", system-ui;
+  font-style: normal;
+  color: variables.$white;
+}

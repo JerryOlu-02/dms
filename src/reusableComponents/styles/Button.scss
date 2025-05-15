@@ -1,0 +1,15 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+.btn {
+  background: linear-gradient(90deg, #5747ff 0%, #993ffc 100%);
+  padding: 16px 51px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  border-width: 0;
+  width: fit-content;
+  @include mixins.flex-center;
+  gap: 8px;
+  cursor: pointer;
+}

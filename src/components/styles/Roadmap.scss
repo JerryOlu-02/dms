@@ -1,0 +1,103 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+.roadmap {
+  background: rgba(1, 6, 12, 1);
+  padding: 140px 5%;
+  @include mixins.flex-center;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.roadmap-header {
+  @include mixins.flex-center;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  width: 35%;
+
+  h3 {
+    @include mixins.h3;
+    color: variables.$white;
+  }
+
+  p {
+    @include mixins.p;
+    color: variables.$light-blue;
+  }
+}
+
+.roadmap-item__wrapper {
+  @include mixins.flex-center;
+  flex-direction: column;
+  gap: 72px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 1px;
+    height: 88%;
+    background-color: rgba(46, 46, 46, 1);
+    position: absolute;
+    left: 50%;
+    top: 6%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+}
+
+.roadmap-item {
+  @include mixins.flex-center;
+  flex-direction: row;
+  gap: 48px;
+  width: 100%;
+  z-index: 1;
+
+  &:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+}
+
+.roadmap-image {
+  //   width: 292px;
+  //   height: 172px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.roadmap-number {
+  @include mixins.flex-center;
+  width: 48px;
+  aspect-ratio: 1/1;
+  background: linear-gradient(
+    135deg,
+    #53b9f3 13.56%,
+    #187db7 49.44%,
+    #024266 85.33%
+  );
+  color: variables.$white;
+  font-size: 28px;
+  font-weight: 400px;
+  border-radius: 50%;
+}
+
+.roadmap-item__content {
+  @include mixins.flex-center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 292px;
+
+  h4 {
+    @include mixins.p1;
+    color: variables.$white;
+  }
+
+  p {
+    @include mixins.p2;
+    color: variables.$dark-blue;
+  }
+}

@@ -1,0 +1,83 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../assets/hero__img.png");
+  background-size: cover;
+  background-position-x: 100%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  @include mixins.flex-column;
+  justify-content: flex-end;
+  @include mixins.padding;
+  padding-bottom: 150px;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      256.87deg,
+      rgba(0, 0, 0, 0) 43.18%,
+      rgba(0, 0, 0, 0.6) 61.95%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 70.6%, rgba(2, 11, 26, 0.6) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero__content {
+  z-index: 1;
+  @include mixins.flex-column;
+  gap: 60px;
+
+  .btn {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -15px;
+      transform: translate3d(0px, 10px, -1px);
+      z-index: -1;
+      filter: blur(70px);
+      background: linear-gradient(90deg, #5747ff 0%, #993ffc 100%);
+    }
+  }
+}
+
+.hero__description {
+  @include mixins.flex-column;
+  gap: 28px;
+  width: fit-content;
+
+  h1 {
+    @include mixins.h1;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(223, 239, 255, 0.5);
+    width: 50%;
+  }
+
+  span {
+    background-image: linear-gradient(
+      176.64deg,
+      #aba2ff 49.78%,
+      #02d7f2 124.47%
+    );
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

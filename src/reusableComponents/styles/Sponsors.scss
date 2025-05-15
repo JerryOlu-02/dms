@@ -1,0 +1,55 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+@keyframes move {
+  //   0% {
+  //     transform: translate(0);
+  //   }
+
+  to {
+    transform: translate(calc(-100% - 126px));
+  }
+}
+
+.sponsors {
+  @include mixins.flex-center;
+  gap: 126px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 32px 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8) -11.83%,
+    rgba(0, 0, 0, 0) 22.03%,
+    rgba(0, 0, 0, 0) 48.03%,
+    rgba(0, 0, 0, 0) 77.71%,
+    rgba(0, 0, 0, 0.8) 109.05%
+  );
+  mask: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 0.8) 80%,
+    transparent
+  );
+}
+
+.sponsors__container {
+  @include mixins.flex-space-between;
+  flex-wrap: nowrap;
+  gap: 126px;
+  width: max-content;
+  animation-name: move;
+  animation-duration: 20s;
+  animation-direction: right;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  svg {
+    width: 100px;
+    height: 28px;
+  }
+}
