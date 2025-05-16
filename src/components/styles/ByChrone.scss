@@ -1,0 +1,59 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+.by-chrone {
+  background-color: rgba(1, 6, 12, 1);
+  padding: 120px 150px;
+  @include mixins.flex-center;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.by-chrone__img-wrapper {
+  position: relative;
+  width: 60%;
+  height: 450px;
+  margin-bottom: 9px;
+}
+
+.by-chrone__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img__overlay {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #01060c 4.63%,
+    rgba(0, 3, 5, 0) 31.43%,
+    rgba(0, 0, 0, 0) 52.32%,
+    rgba(1, 3, 6, 0) 77.44%,
+    #01060c 100%
+  );
+}
+
+.by-chrone__content {
+  @include mixins.flex-center;
+  flex-direction: column;
+  gap: 16px;
+  width: 40%;
+  text-align: center;
+
+  h3 {
+    @include mixins.h4;
+    color: variables.$white;
+  }
+
+  p {
+    color: rgba(167, 190, 212, 1);
+    @include mixins.p;
+  }
+}

@@ -1,0 +1,67 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+.footer {
+  padding: 70px 120px;
+  background-color: rgba(4, 14, 29, 1);
+  @include mixins.flex-center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.footer__logo {
+  @include mixins.flex-column;
+  gap: 16px;
+  width: 27%;
+
+  h5 {
+    font-family: "Emblema One", system-ui;
+    font-style: normal;
+    @include mixins.h5;
+    color: variables.$white;
+    font-weight: 400;
+    letter-spacing: -1%;
+  }
+
+  p {
+    @include mixins.p1;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+    letter-spacing: -2%;
+  }
+}
+
+.footer-links__wrapper {
+  @include mixins.flex-row;
+  gap: 80px;
+}
+
+.footer__links {
+  @include mixins.flex-column;
+  align-items: flex-start;
+  gap: 24px;
+
+  h5 {
+    font-weight: 400;
+    width: fit-content;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -2%;
+  }
+
+  ul {
+    @include mixins.flex-column;
+    gap: 16px;
+    align-items: flex-start;
+
+    li {
+      list-style-type: none;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+}

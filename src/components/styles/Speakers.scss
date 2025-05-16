@@ -1,2 +1,65 @@
 @use "/src/styles/variables";
 @use "/src/styles/mixins";
+
+.speakers {
+  background-color: rgba(1, 6, 12, 1);
+  padding: 120px 200px;
+  @include mixins.flex-center;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.speakers-header {
+  @include mixins.flex-center;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  width: 40%;
+
+  h3 {
+    @include mixins.h3;
+    color: variables.$white;
+  }
+
+  p {
+    @include mixins.p;
+    color: rgba(167, 190, 212, 1);
+  }
+}
+
+.speakers-item__wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  gap: 20px;
+  row-gap: 48px;
+}
+
+.speaker-item {
+  @include mixins.flex-column;
+  gap: 28px;
+}
+
+.speaker-item__image {
+  min-height: 23rem;
+  aspect-ratio: 1/1.05;
+  object-fit: cover;
+}
+
+.speaker-item__desc {
+  @include mixins.flex-column;
+  gap: 12px;
+  align-items: flex-start;
+
+  h5 {
+    @include mixins.h5;
+    color: variables.$white;
+  }
+
+  p {
+    @include mixins.p1;
+    color: rgba(167, 190, 212, 1);
+    letter-spacing: 0%;
+    line-height: 100%;
+  }
+}

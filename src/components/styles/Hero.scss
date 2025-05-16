@@ -7,13 +7,13 @@
   min-height: 100vh;
   background-image: url("../../assets/hero__img.png");
   background-size: cover;
-  background-position-x: 100%;
+  background-position-x: 60%;
   background-position-y: center;
   background-repeat: no-repeat;
   @include mixins.flex-column;
   justify-content: flex-end;
   @include mixins.padding;
-  padding-bottom: 150px;
+  padding-bottom: 250px;
   z-index: 1;
 }
 
@@ -28,7 +28,11 @@
       rgba(0, 0, 0, 0) 43.18%,
       rgba(0, 0, 0, 0.6) 61.95%
     ),
-    linear-gradient(180deg, rgba(0, 0, 0, 0) 70.6%, rgba(2, 11, 26, 0.6) 100%);
+    linear-gradient(
+      175.29deg,
+      rgba(0, 0, 0, 0) 38.35%,
+      rgba(2, 11, 26, 0.6) 55.51%
+    );
   pointer-events: none;
   z-index: 0;
 }
@@ -79,5 +83,65 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .hero {
+    padding: 0 5%;
+    padding-bottom: 160px;
+  }
+
+  .hero__description {
+    h1 {
+    }
+
+    p {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero {
+    background-position-x: 60%;
+    padding: 0 5%;
+    padding-bottom: 160px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .overlay {
+    background: linear-gradient(
+        256.87deg,
+        rgba(0, 0, 0, 0) 43.18%,
+        rgba(0, 0, 0, 0.6) 61.95%
+      ),
+      linear-gradient(
+        175.29deg,
+        rgba(0, 0, 0, 0) 38.35%,
+        rgba(2, 11, 26, 0.6) 55.51%
+      );
+  }
+
+  .hero__content {
+    align-items: center;
+    gap: 32px;
+  }
+
+  .hero__description {
+    gap: 20px;
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      width: 90%;
+      text-align: center;
+      font-size: 12px;
+      line-height: 15.36px;
+      letter-spacing: -2%;
+    }
   }
 }

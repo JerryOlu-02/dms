@@ -1,0 +1,80 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+.why-attend {
+  padding: 150px 200px;
+  background-color: rgba(1, 6, 12, 1);
+  @include mixins.flex-column;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.why-item__header {
+  @include mixins.flex-column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 48%;
+
+  h3 {
+    @include mixins.h3;
+    color: variables.$white;
+  }
+
+  p {
+    @include mixins.p;
+    color: rgba(167, 190, 212, 1);
+  }
+}
+
+.why-item__wrapper {
+  @include mixins.flex-column;
+  gap: 20px;
+  width: 100%;
+}
+
+.why-item__wrapper-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+.why-item__wrapper-bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.why-item {
+  padding: 24px 20px;
+  border: 1px solid rgba(30, 37, 47, 1);
+  border-radius: 16px;
+
+  @include mixins.flex-column;
+  align-items: flex-start;
+  gap: 48px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.why-item__content {
+  @include mixins.flex-column;
+  align-items: flex-start;
+  gap: 20px;
+
+  p {
+    color: rgba(167, 190, 212, 1);
+    @include mixins.p1;
+    font-weight: 400;
+
+    &:first-of-type {
+      color: variables.$white;
+      font-weight: 500;
+      line-height: 100%;
+      letter-spacing: -2%;
+    }
+  }
+}

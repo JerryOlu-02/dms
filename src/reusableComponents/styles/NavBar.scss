@@ -29,3 +29,26 @@
   font-style: normal;
   color: variables.$white;
 }
+
+@media screen and (max-width: 990px) {
+  .navbar {
+    padding: 16px 10%;
+  }
+
+  .btn-nav {
+    padding: 15.5px 16px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    padding: 21px 5%;
+  }
+
+  .btn-nav {
+    // padding: 15.5px 16px;
+    // font-size: 12px;
+    display: none;
+  }
+}
