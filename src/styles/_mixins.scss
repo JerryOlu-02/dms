@@ -46,9 +46,20 @@
   letter-spacing: -4%;
 }
 
+@mixin media-breakpoint-h3 {
+  font-size: 40px;
+  line-height: 38px;
+}
+
 @mixin h4 {
   font-weight: 500;
   font-size: 52px;
+  line-height: 100%;
+  letter-spacing: -3%;
+}
+
+@mixin media-breakpoint-h4 {
+  font-size: 32px;
   line-height: 100%;
   letter-spacing: -3%;
 }
@@ -72,6 +83,12 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -3%;
+}
+
+@mixin media-breakpoint-p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -2%;
 }
 
 @mixin p2 {

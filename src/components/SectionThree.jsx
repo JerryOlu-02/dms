@@ -1,37 +1,19 @@
 import { ReactComponent as TvLogo } from "../assets/tv.svg";
 import "./styles/SectionThree.scss";
 import EventImg from "../assets/expect__img.png";
+import { EVENT__DETAILS as eventDetails } from "../utils/textObjects";
 
 export default function SectionThree() {
-  const eventDetails = [
-    {
-      content: "Registered Attendees",
-      attendees: 4000,
-    },
-    {
-      content: "Sponsors and Partners",
-      attendees: "50+",
-    },
-    {
-      content: "Event Tracks",
-      attendees: 8,
-    },
-    {
-      content: "Interactive Panel ",
-      attendees: 4,
-    },
-    {
-      content: "Class Speakers",
-      attendees: 8,
-    },
-  ];
-
   const events = eventDetails.map((event, index) => {
     return (
       <div className="event__container" key={index}>
         <TvLogo />
-        <p>{event.content}</p>
-        <h4>{event.attendees}</h4>
+
+        <div className="event__content">
+          <p>{event.content}</p>
+
+          <h4>{event.attendees}</h4>
+        </div>
       </div>
     );
   });

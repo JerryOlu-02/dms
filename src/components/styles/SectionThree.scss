@@ -42,6 +42,12 @@
   }
 }
 
+.events__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .events__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14.25rem, 1fr));
@@ -55,7 +61,12 @@
   @include mixins.flex-center;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 24px;
+}
+
+.event__content {
+  @include mixins.flex-column;
+  gap: 8px;
 
   p {
     color: rgba(124, 129, 147, 1);
@@ -67,8 +78,127 @@
   }
 }
 
-.events__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@media screen and (max-width: 1435px) {
+  .section-three {
+    padding: 150px 150px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .section-three {
+    padding: 100px 5%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .events__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+
+  .event__content {
+    p {
+      @include mixins.media-breakpoint-p;
+    }
+
+    h4 {
+      @include mixins.media-breakpoint-h4;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .section-three__header {
+    width: 80%;
+
+    h3 {
+      font-size: 56px;
+      width: 90%;
+    }
+  }
+
+  .section-three__content {
+    flex-direction: column;
+    @include mixins.flex-center;
+    width: 85%;
+
+    aside {
+      width: 100%;
+    }
+  }
+
+  .events__image {
+    height: 500px;
+  }
+
+  .event__container {
+    &:last-of-type {
+      grid-column: span 2;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section-three {
+    padding: 80px 18px;
+  }
+
+  .section-three__header {
+    gap: 12px;
+
+    h3 {
+      font-size: 40px;
+      line-height: 100%;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -2%;
+    }
+  }
+
+  .section-three__content {
+    gap: 32px;
+    width: 90%;
+  }
+
+  .events__image {
+    height: 400px;
+  }
+
+  .events__wrapper {
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+
+  .event__container {
+    padding: 20px 24px;
+    gap: 16px;
+
+    &:last-of-type {
+      grid-column: span 2;
+    }
+  }
+
+  .event__content {
+    gap: 4px;
+
+    p {
+      @include mixins.media-breakpoint-p;
+    }
+
+    h4 {
+      @include mixins.media-breakpoint-h4;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .events__image {
+    height: 310px;
+  }
+
+  .section-three__content {
+    width: 100%;
+  }
 }

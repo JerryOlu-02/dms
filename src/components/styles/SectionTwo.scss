@@ -4,17 +4,18 @@
 .section-two {
   width: 100%;
   @include mixins.flex-center;
-  min-height: 58rem;
+  min-height: 32rem;
   background: linear-gradient(180deg, #030c1b 0%, #01060c 100%);
   padding: 120px 5%;
   position: relative;
 }
 
 .text-container {
-  width: 70%;
+  position: relative;
   @include mixins.flex-center;
   flex-direction: column;
   gap: 38px;
+  padding: 160px 0;
 
   p {
     font-size: 14px;
@@ -39,10 +40,43 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 80%;
+  height: 100%;
   aspect-ratio: 1/1;
   transform: translate(-50%, -50%);
   border-width: 0;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.04);
+}
+
+@media screen and (max-width: 1100px) {
+  .text-container {
+    h2 {
+      font-size: 48px;
+      line-height: 100%;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .text-container {
+    h2 {
+      font-size: 38px;
+      line-height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .section-two {
+    padding: 80px 18px;
+  }
+
+  .text-container {
+    padding: 88px 0;
+    gap: 20px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 100%;
+    }
+  }
 }

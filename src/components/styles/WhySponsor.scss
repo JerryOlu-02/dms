@@ -45,6 +45,7 @@
     @include mixins.p2;
     line-height: 22px;
     letter-spacing: -1%;
+    color: rgba(167, 190, 212, 1);
   }
 }
 
@@ -55,4 +56,103 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1670px) {
+  .why-sponsor__description {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .why-sponsor__description {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .why-sponsor {
+    padding: 120px 80px;
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .why-sponsor {
+    gap: 80px;
+  }
+}
+
+@media screen and (max-width: 1285px) {
+  .why-sponsor__description {
+    h4 {
+      font-size: 40px;
+    }
+  }
+  .why-sponsor__right {
+    height: 520px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .why-sponsor {
+    flex-direction: column;
+    padding: 80px 18px;
+
+    aside {
+      width: 85%;
+    }
+  }
+
+  .why-sponsor__right {
+    width: 100%;
+    height: 590px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .why-sponsor {
+    aside {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .why-sponsor {
+    padding: 80px 18px;
+    gap: 40px;
+    flex-direction: column;
+
+    aside {
+      width: 100%;
+    }
+  }
+
+  .why-sponsor__left {
+    width: 100%;
+  }
+
+  .why-sponsor__description {
+    width: 100%;
+    gap: 20px;
+
+    div {
+      line-height: 100%;
+    }
+
+    h4 {
+      @include mixins.media-breakpoint-h3;
+    }
+
+    p {
+      @include mixins.media-breakpoint-p;
+      line-height: 22px;
+    }
+  }
+
+  .why-sponsor__right {
+    width: 100%;
+    height: 452px;
+  }
 }
