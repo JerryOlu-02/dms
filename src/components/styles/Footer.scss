@@ -7,13 +7,14 @@
   @include mixins.flex-center;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 80px;
 }
 
 .footer__logo {
   @include mixins.flex-column;
   gap: 16px;
-  width: 27%;
+  width: 30%;
 
   h5 {
     font-family: "Emblema One", system-ui;
@@ -63,5 +64,56 @@
       letter-spacing: 0%;
       color: rgba(255, 255, 255, 0.7);
     }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .footer__logo {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-links__wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .footer {
+    padding: 70px 10%;
+  }
+
+  .footer__logo {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    padding: 70px 7.5%;
+  }
+
+  .footer__logo {
+    width: 60%;
+  }
+
+  .footer-links__wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer__logo {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 70px 18px;
   }
 }

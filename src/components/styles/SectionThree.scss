@@ -202,3 +202,16 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .events__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .events__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

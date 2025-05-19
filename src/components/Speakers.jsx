@@ -1,45 +1,7 @@
 import "./styles/Speakers.scss";
-import Speaker1Img from "../assets/speakers/speaker-1.png";
-import Speaker2Img from "../assets/speakers/speaker-2.png";
-import Speaker3Img from "../assets/speakers/speaker-3.png";
-import Speaker4Img from "../assets/speakers/speaker-4.png";
-import Speaker5Img from "../assets/speakers/speaker-5.png";
-import Speaker6Img from "../assets/speakers/speaker-6.png";
+import { SPEAKERS as speakers } from "../utils/textObjects";
 
 export default function Speakers() {
-  const speakers = [
-    {
-      image: Speaker1Img,
-      name: "Jacob Murphy",
-      position: "Founder, Editorial PHF",
-    },
-    {
-      image: Speaker2Img,
-      name: "Susan Udoka",
-      position: "CEO, Francise",
-    },
-    {
-      image: Speaker3Img,
-      name: "Patricia Adeola",
-      position: "Founder, Editorial PHF",
-    },
-    {
-      image: Speaker4Img,
-      name: "Alex Crane",
-      position: "Shopify Expert",
-    },
-    {
-      image: Speaker5Img,
-      name: "Chidinma Okoye",
-      position: "Creator",
-    },
-    {
-      image: Speaker6Img,
-      name: "Aaron Ayomide",
-      position: "Creative Editor, Rikoko",
-    },
-  ];
-
   const speakerItem = speakers.map((item, index) => {
     return (
       <div className="speaker-item" key={index}>

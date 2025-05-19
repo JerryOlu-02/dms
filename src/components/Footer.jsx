@@ -9,7 +9,7 @@ export default function Footer() {
         <p>
           At DMS 2.0, we bring together the latest strategies, cutting-edge
           tools, and industry-leading experts to help you succeed in the dynamic
-          world of e-commerce. 
+          world of e- commerce. 
         </p>
       </div>
 

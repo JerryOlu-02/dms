@@ -14,6 +14,14 @@ import { ReactComponent as RoadmapThreeSvg } from "../assets/roadmap-3.svg";
 import { ReactComponent as RoadmapFourSvg } from "../assets/roadmap-4.svg";
 import { ReactComponent as RoadmapFiveSvg } from "../assets/roadmap-5.svg";
 
+// These imports are used to display speaker images on the "Speakers" section/components on the website
+import Speaker1Img from "../assets/speakers/speaker-1.png";
+import Speaker2Img from "../assets/speakers/speaker-2.png";
+import Speaker3Img from "../assets/speakers/speaker-3.png";
+import Speaker4Img from "../assets/speakers/speaker-4.png";
+import Speaker5Img from "../assets/speakers/speaker-5.png";
+import Speaker6Img from "../assets/speakers/speaker-6.png";
+
 // These objects are used to display information on the "WhyAttend" section/component on the website
 export const WHY__ITEMS = [
   {
@@ -98,5 +106,39 @@ export const ROADMAP__DETAILS = [
     program: "Solution-Focused Tracks",
     description:
       "Tracks that focus on specific products, services, or solutions being presented at the event.",
+  },
+];
+
+// These objects are used to display speaker images on the "Speakers" section/components on the website
+export const SPEAKERS = [
+  {
+    image: Speaker1Img,
+    name: "Jacob Murphy",
+    position: "Founder, Editorial PHF",
+  },
+  {
+    image: Speaker2Img,
+    name: "Susan Udoka",
+    position: "CEO, Francise",
+  },
+  {
+    image: Speaker3Img,
+    name: "Patricia Adeola",
+    position: "Founder, Editorial PHF",
+  },
+  {
+    image: Speaker4Img,
+    name: "Alex Crane",
+    position: "Shopify Expert",
+  },
+  {
+    image: Speaker5Img,
+    name: "Chidinma Okoye",
+    position: "Creator",
+  },
+  {
+    image: Speaker6Img,
+    name: "Aaron Ayomide",
+    position: "Creative Editor, Rikoko",
   },
 ];

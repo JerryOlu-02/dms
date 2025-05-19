@@ -9,11 +9,9 @@ export default function SectionTwo() {
         <p>What Is DMS?</p>
 
         <h2>
-          The Digital Marketing Summit
-          <br /> (DMS) unites bold marketers and
-          <br /> creatives to share insights, spark
-          <br /> ideas, and shape the future of
-          <br /> digital commerce.
+          The Digital Marketing Summit (DMS) unites bold marketers and creatives
+          to share insights, spark ideas, and shape the future of digital
+          commerce.
         </h2>
       </div>
     </section>
