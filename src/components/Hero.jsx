@@ -13,7 +13,8 @@ export default function Hero() {
       <div className="hero__content">
         <div className="hero__description">
           <h1>
-            The Future of <br /> <span>eCommerce</span>
+            The Future of <br />
+            <span>eCommerce</span>
           </h1>
 
           <p>

@@ -94,9 +94,6 @@
   }
 
   .hero__description {
-    h1 {
-    }
-
     p {
       width: 60%;
     }
@@ -143,6 +140,15 @@
       font-size: 12px;
       line-height: 15.36px;
       letter-spacing: -2%;
+    }
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .hero__description {
+    h1 {
+      font-size: 40px;
+      line-height: 50px;
     }
   }
 }
