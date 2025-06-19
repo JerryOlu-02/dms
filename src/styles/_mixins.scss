@@ -41,9 +41,9 @@
 
 @mixin h3 {
   font-weight: 500;
-  font-size: 70px;
-  line-height: 68px;
-  letter-spacing: -4%;
+  font-size: var(--header-1);
+  line-height: var(--line-height-1);
+  letter-spacing: var(--letter-spacing-1);
 }
 
 @mixin media-breakpoint-h3 {
@@ -96,4 +96,32 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: -3%;
+}
+
+@mixin outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin geist-mono {
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin cambon {
+  font-family: "Cambon", "sans-serif";
+  font-style: italic;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin cambon-p {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 2%;
 }

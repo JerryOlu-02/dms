@@ -1,4 +1,5 @@
 import { WHY__ITEMS as whyItems } from "../utils/textObjects";
+import Button from "../reusableComponents/Button";
 import "./styles/WhyAttend.scss";
 
 export default function WhyAttend() {
@@ -39,12 +40,11 @@ export default function WhyAttend() {
   return (
     <section className="why-attend">
       <aside className="why-item__header">
-        <h3>Why You Should Attend</h3>
+        <h3>Why This Event Is a Must for You</h3>
 
-        <p>
-          Unlock a world of inspiration, strategies, and opportunities to
-          elevate your e-commerce journey.
-        </p>
+        <p>Gain the tools and knowledge to elevate your brand and career.</p>
+
+        <Button>Book a Seat</Button>
       </aside>
 
       <aside className="why-item__wrapper">

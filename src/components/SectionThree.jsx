@@ -21,11 +21,8 @@ export default function SectionThree() {
   return (
     <section className="section-three">
       <div className="section-three__header">
-        <h3>What to Expect</h3>
-        <p>
-          Discover the key sessions, speakers, and highlights planned for the
-          event.
-        </p>
+        <h3>What Awaits You at DMS 2.0</h3>
+        <p>Get insights, strategies, and connections to grow your brand.</p>
       </div>
 
       <div className="section-three__content">

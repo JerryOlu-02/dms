@@ -3,7 +3,7 @@
 
 .roadmap {
   background: rgba(1, 6, 12, 1);
-  padding: 140px 5%;
+  padding: 150px 250px;
   @include mixins.flex-center;
   flex-direction: column;
   gap: 64px;
@@ -14,16 +14,18 @@
   flex-direction: column;
   gap: 24px;
   text-align: center;
-  width: 35%;
+  width: 45%;
 
   h3 {
     @include mixins.h3;
+    @include mixins.outfit;
     color: variables.$white;
   }
 
   p {
-    @include mixins.p;
-    color: variables.$light-blue;
+    @include mixins.cambon;
+    @include mixins.cambon-p;
+    color: variables.$italic-text;
   }
 }
 
@@ -33,23 +35,23 @@
   gap: 72px;
   position: relative;
 
-  &::before {
-    content: "";
-    width: 1px;
-    height: 88%;
-    background-color: rgba(46, 46, 46, 1);
-    position: absolute;
-    left: 50%;
-    top: 6%;
-    transform: translateX(-50%);
-    z-index: 0;
-  }
+  // &::before {
+  //   content: "";
+  //   width: 1px;
+  //   height: 88%;
+  //   background-color: rgba(46, 46, 46, 1);
+  //   position: absolute;
+  //   left: 50%;
+  //   top: 6%;
+  //   transform: translateX(-50%);
+  //   z-index: 0;
+  // }
 }
 
 .roadmap-item {
   @include mixins.flex-center;
   flex-direction: row;
-  gap: 48px;
+  gap: 43px;
   width: 100%;
   z-index: 1;
 
@@ -59,8 +61,8 @@
 }
 
 .roadmap-image {
-  //   width: 292px;
-  //   height: 172px;
+  width: 440px;
+  height: 50%;
 
   svg {
     width: 100%;
@@ -91,16 +93,19 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  width: 292px;
+  width: 440px;
 
   h4 {
-    @include mixins.p1;
+    @include mixins.cambon;
+    font-weight: 400;
+    color: rgba(192, 237, 255, 1);
+    @include mixins.cambon-p;
     color: variables.$white;
   }
 
   p {
     @include mixins.p2;
-    color: variables.$dark-blue;
+    color: rgba(203, 217, 230, 1);
   }
 }
 
@@ -111,6 +116,20 @@
 
   .roadmap-header {
     width: 45%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .roadmap {
+    padding: 80px 5%;
+  }
+
+  .roadmap-image {
+    width: 50%;
+  }
+
+  .roadmap-item__content {
+    width: 50%;
   }
 }
 
@@ -142,10 +161,6 @@
   .roadmap-header {
     width: 90%;
 
-    h3 {
-      @include mixins.media-breakpoint-h3;
-    }
-
     p {
       @include mixins.media-breakpoint-p;
     }
@@ -156,7 +171,7 @@
   }
 
   .roadmap-item__wrapper {
-    gap: 40px;
+    gap: 72px;
     width: 85%;
 
     &::before {
@@ -165,12 +180,12 @@
   }
 
   .roadmap-item {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
     width: 100%;
 
     &:nth-of-type(2n) {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
   }
 
@@ -181,7 +196,7 @@
   }
 
   .roadmap-number {
-    order: 1;
+    order: 0;
   }
 
   .roadmap-item__content {

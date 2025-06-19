@@ -1,0 +1,84 @@
+@use "/src/styles/variables";
+@use "/src/styles/mixins";
+
+.video-section {
+  padding: 150px 200px;
+  background-color: rgba(0, 7, 24, 1);
+  @include mixins.flex-column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.video-section__header {
+  @include mixins.flex-column;
+  align-items: center;
+  text-align: center;
+  gap: 48px;
+
+  h3 {
+    font-size: 64px;
+    line-height: 60px;
+    @include mixins.outfit;
+    width: 65%;
+    color: rgba(255, 252, 244, 1);
+
+    @media screen and (max-width: 1590px) {
+      width: 75%;
+    }
+
+    @media screen and (max-width: 1150px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 1070px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1050px) {
+      font-size: 56px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    @media screen and (max-width: 470px) {
+      font-size: 40px;
+      line-height: 38px;
+    }
+  }
+
+  p {
+    @include mixins.cambon;
+    @include mixins.cambon-p;
+    color: rgba(117, 216, 255, 1);
+  }
+}
+
+.video-section__vid {
+  width: 100%;
+  height: 630px;
+  background: linear-gradient(0deg, #ffffff, #ffffff),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+@media screen and (max-width: 1450px) {
+  .video-section {
+    padding: 80px 10%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .video-section {
+    padding: 80px 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video-section__header {
+    p {
+      @include mixins.media-breakpoint-p;
+    }
+  }
+}

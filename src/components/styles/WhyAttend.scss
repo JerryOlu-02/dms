@@ -3,7 +3,7 @@
 
 .why-attend {
   padding: 150px 200px;
-  background-color: rgba(1, 6, 12, 1);
+  background-color: rgba(0, 5, 16, 1);
   @include mixins.flex-column;
   gap: 64px;
   align-items: flex-start;
@@ -17,12 +17,18 @@
 
   h3 {
     @include mixins.h3;
-    color: variables.$white;
+    @include mixins.outfit;
+    color: variables.$off-white;
   }
 
   p {
+    @include mixins.cambon;
     @include mixins.p;
-    color: rgba(167, 190, 212, 1);
+    color: rgba(117, 216, 255, 1);
+  }
+
+  .btn {
+    margin-top: 24px;
   }
 }
 
@@ -66,15 +72,15 @@
   gap: 20px;
 
   p {
-    color: rgba(167, 190, 212, 1);
+    color: rgba(210, 233, 255, 1);
     @include mixins.p1;
     font-weight: 400;
 
     &:first-of-type {
-      color: variables.$white;
-      font-weight: 500;
+      color: rgba(117, 216, 255, 1);
+      @include mixins.cambon;
       line-height: 100%;
-      letter-spacing: -2%;
+      letter-spacing: 2%;
     }
   }
 }
@@ -114,8 +120,18 @@
 }
 
 @media screen and (max-width: 850px) {
+  .why-attend {
+    align-items: center;
+  }
+
   .why-item__header {
     width: 90%;
+    align-items: center;
+    text-align: center;
+
+    .btn {
+      margin-top: 8px;
+    }
   }
 
   .why-item__wrapper-top,
@@ -160,5 +176,9 @@
 @media screen and (max-width: 550px) {
   .why-attend {
     padding: 80px 18px;
+  }
+
+  .why-item__header {
+    width: 100%;
   }
 }

@@ -2,7 +2,7 @@
 @use "/src/styles/mixins";
 
 .speakers {
-  background-color: rgba(1, 6, 12, 1);
+  background-color: rgba(0, 7, 24, 1);
   padding: 120px 200px;
   @include mixins.flex-center;
   flex-direction: column;
@@ -18,13 +18,15 @@
 
   h3 {
     @include mixins.h3;
+    @include mixins.outfit;
     color: variables.$white;
     width: 45%;
   }
 
   p {
-    @include mixins.p;
-    color: rgba(167, 190, 212, 1);
+    @include mixins.cambon;
+    @include mixins.cambon-p;
+    color: rgba(117, 216, 255, 1);
   }
 }
 
@@ -59,8 +61,11 @@
   }
 
   p {
-    @include mixins.p1;
-    color: rgba(167, 190, 212, 1);
+    @include mixins.geist-mono;
+    @include mixins.p2;
+    background: linear-gradient(180deg, #aba2ff 0%, #02d7f2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     letter-spacing: 0%;
     line-height: 100%;
   }
@@ -93,10 +98,11 @@
 
   .speakers-item__wrapper {
     width: 85%;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 
   .speaker-item__desc {
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -104,13 +110,29 @@
   .speakers-header {
     h3 {
       width: 70%;
-      @include mixins.media-breakpoint-h3;
+      // @include mixins.media-breakpoint-h3;
     }
 
     p {
       @include mixins.media-breakpoint-p;
       line-height: 22px;
     }
+  }
+
+  .speaker-item__desc {
+    h5 {
+      font-size: 14px;
+      letter-spacing: -1%;
+    }
+
+    p {
+      font-size: 10px;
+      letter-spacing: -2%;
+    }
+  }
+
+  .speaker-item__image {
+    min-height: unset;
   }
 }
 
@@ -120,19 +142,18 @@
   }
 
   .speakers-item__wrapper {
-    width: 90%;
+    width: 100%;
+    gap: 12px;
+    row-gap: 32px;
   }
 
-  .speaker-item__desc {
-    h5 {
-      font-size: 18px;
-      letter-spacing: -1%;
-    }
+  .speaker-item__image {
+    // height: 180px;
+    aspect-ratio: 1/1;
+  }
 
-    p {
-      font-size: 14px;
-      letter-spacing: -1%;
-    }
+  .btn {
+    width: 100%;
   }
 }
 
@@ -141,15 +162,30 @@
     width: 100%;
 
     h3 {
-      width: 90%;
+      width: 100%;
     }
   }
   .speakers-item__wrapper {
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   }
 }
 
 @media screen and (max-width: 400px) {
+  .speakers-item__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .speakers-header {
+    h3 {
+      font-size: 40px;
+      line-height: 38px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
   .speakers-item__wrapper {
     @include mixins.flex-column;
     gap: 40px;

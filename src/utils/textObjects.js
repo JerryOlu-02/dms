@@ -142,3 +142,46 @@ export const SPEAKERS = [
     position: "Creative Editor, Rikoko",
   },
 ];
+
+export const EVENT__TRACKS = [
+  {
+    heading: "Digital Commerce & Conversion",
+    tracks: [
+      "From Storefront to Success: Turning Browsers into Buyers",
+      "How to Make Your Brand Famous With Email Marketing",
+      "Optimizing Post-Purchase Journeys & Customer Experience",
+      "What No One Tells You About Scaling DTC in 2025",
+    ],
+    image: "",
+  },
+  {
+    heading: "The Creative Systems",
+    tracks: [
+      "7-Figure Scaling Playbook for Bootstrapped Brands",
+      "What Investors Want: Pitching Beyond the Numbers",
+      "Playing Big in a “Saturated” Market",
+      "Niche Specialization: How to Find, Own, and Scale Your Unique Market",
+    ],
+    image: "",
+  },
+  {
+    heading: "Scaling, Markets & Capital",
+    tracks: [
+      "7-Figure Scaling Playbook for Bootstrapped Brands",
+      "What Investors Want: Pitching Beyond the Numbers",
+      "Playing Big in a “Saturated” Market",
+      "Niche Specialization: How to Find, Own, and Scale Your Unique Market",
+    ],
+    image: "",
+  },
+  {
+    heading: "Digital Commerce & Conversion",
+    tracks: [
+      "From Storefront to Success: Turning Browsers into Buyers",
+      "How to Make Your Brand Famous With Email Marketing",
+      "Optimizing Post-Purchase Journeys & Customer Experience",
+      "What No One Tells You About Scaling DTC in 2025",
+    ],
+    image: "",
+  },
+];

@@ -5,28 +5,30 @@ import "./styles/Hero.scss";
 
 export default function Hero() {
   return (
-    <section className="hero">
-      <div className="overlay"></div>
+    <>
+      <section className="hero">
+        {/* <div className="overlay"></div> */}
 
-      <NavBar />
+        <NavBar />
 
-      <div className="hero__content">
-        <div className="hero__description">
-          <h1>
-            The Future of <br />
-            <span>eCommerce</span>
-          </h1>
+        <div className="hero__content">
+          <div className="hero__description">
+            <h1>
+              The Future of <br />
+              <span>eCommerce</span>
+            </h1>
 
-          <p>
-            Empowering brands to grow, expanding market reach, and driving
-            innovation to shape a better future.
-          </p>
+            <p>
+              Empowering brands to grow, expanding market reach, and driving
+              innovation to shape a better future.
+            </p>
+          </div>
+
+          <Button>Book a Seat</Button>
         </div>
-
-        <Button>Book a ticket</Button>
-      </div>
+      </section>
 
       <Sponsors />
-    </section>
+    </>
   );
 }

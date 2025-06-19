@@ -1,5 +1,6 @@
 import "./styles/Speakers.scss";
 import { SPEAKERS as speakers } from "../utils/textObjects";
+import Button from "../reusableComponents/Button";
 
 export default function Speakers() {
   const speakerItem = speakers.map((item, index) => {
@@ -25,13 +26,12 @@ export default function Speakers() {
       <aside className="speakers-header">
         <h3>Get to Know Our Speakers</h3>
 
-        <p>
-          Get ready for an exciting lineup of speakers who will share their
-          stories and knowledge.
-        </p>
+        <p>Real experts. Real experience.</p>
       </aside>
 
       <aside className="speakers-item__wrapper">{speakerItem}</aside>
+
+      <Button>Book a Seat</Button>
     </section>
   );
 }

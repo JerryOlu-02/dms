@@ -1,5 +1,6 @@
 import "./styles/Roadmap.scss";
 import { ROADMAP__DETAILS as roadmapDetails } from "../utils/textObjects";
+import Button from "../reusableComponents/Button";
 
 export default function Roadmap() {
   const roadmapItems = roadmapDetails.map((item, index) => {
@@ -21,15 +22,14 @@ export default function Roadmap() {
   return (
     <section className="roadmap">
       <div className="roadmap-header">
-        <h3>Your Roadmap for the Day</h3>
+        <h3>The Roadmap for the Day</h3>
 
-        <p>
-          Stay on track with a curated agenda to help you get the most from your
-          DMS 2.0 experience.
-        </p>
+        <p>A day of learning, action, and connection.</p>
       </div>
 
       <div className="roadmap-item__wrapper">{roadmapItems}</div>
+
+      <Button>Book a Seat</Button>
     </section>
   );
 }

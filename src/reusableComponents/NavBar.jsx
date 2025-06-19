@@ -7,9 +7,13 @@ export default function NavBar() {
     <nav className="navbar">
       <h3 className="logo">D.M.S</h3>
 
-      <Button className="btn-nav">
-        Book a sponsor <IconUp />
-      </Button>
+      <div className="btn__container">
+        <Button className="btn-nav">
+          Book a Sponsor <IconUp />
+        </Button>
+
+        <Button className="btn-nav">Book a Seat</Button>
+      </div>
     </nav>
   );
 }
