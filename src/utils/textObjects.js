@@ -22,6 +22,15 @@ import Speaker4Img from "../assets/speakers/speaker-4.png";
 import Speaker5Img from "../assets/speakers/speaker-5.png";
 import Speaker6Img from "../assets/speakers/speaker-6.png";
 
+// These imports are used to display information on the "StickySection" section/component on the website
+import TrackImg1 from "../assets/tracks/track-1.jpg";
+import TrackImg2 from "../assets/tracks/track-2.jpg";
+import TrackImg3 from "../assets/tracks/track-3.jpg";
+import TrackImg4 from "../assets/tracks/track-4.jpg";
+import TrackImg5 from "../assets/tracks/track-5.jpg";
+import TrackImg6 from "../assets/tracks/track-6.jpg";
+import TrackImg7 from "../assets/tracks/track-7.jpg";
+
 // These objects are used to display information on the "WhyAttend" section/component on the website
 export const WHY__ITEMS = [
   {
@@ -146,42 +155,75 @@ export const SPEAKERS = [
 export const EVENT__TRACKS = [
   {
     heading: "Digital Commerce & Conversion",
+    desc: `Build online businesses that aren’t just pretty but profitable.`,
     tracks: [
       "From Storefront to Success: Turning Browsers into Buyers",
       "How to Make Your Brand Famous With Email Marketing",
       "Optimizing Post-Purchase Journeys & Customer Experience",
       "What No One Tells You About Scaling DTC in 2025",
     ],
-    image: "",
+    image: TrackImg1,
   },
   {
     heading: "The Creative Systems",
+    desc: "Storytelling, but with structure.",
     tracks: [
       "7-Figure Scaling Playbook for Bootstrapped Brands",
       "What Investors Want: Pitching Beyond the Numbers",
       "Playing Big in a “Saturated” Market",
       "Niche Specialization: How to Find, Own, and Scale Your Unique Market",
     ],
-    image: "",
+    image: TrackImg2,
   },
   {
     heading: "Scaling, Markets & Capital",
+    desc: "Playing the long game.",
     tracks: [
       "7-Figure Scaling Playbook for Bootstrapped Brands",
       "What Investors Want: Pitching Beyond the Numbers",
       "Playing Big in a “Saturated” Market",
       "Niche Specialization: How to Find, Own, and Scale Your Unique Market",
     ],
-    image: "",
+    image: TrackImg3,
   },
   {
-    heading: "Digital Commerce & Conversion",
+    heading: "Creator-Led Commerce",
+    desc: "Creators are the new retailers. Learn how to influence income.",
     tracks: [
-      "From Storefront to Success: Turning Browsers into Buyers",
-      "How to Make Your Brand Famous With Email Marketing",
-      "Optimizing Post-Purchase Journeys & Customer Experience",
-      "What No One Tells You About Scaling DTC in 2025",
+      "Building Brand Collabs That Actually Sell",
+      "The Rise of User-Generated Revenue",
+      "Micro vs. Macro Influence: Who Really Drives Sales?",
+      "Niche Marketing in Creator-Led Commerce",
     ],
-    image: "",
+    image: TrackImg4,
+  },
+  {
+    heading: "Funnels, Flows & Paid Systems",
+    desc: "The traffic isn't the prolem. It's your pipeline.",
+    tracks: [
+      "Funnel Redesigns That Fixed 6-Figure Leaks",
+      "Automating Leads Without Losing Human Touch",
+      "Meta, Google, TikTok: Paid Ads That Still Work",
+    ],
+    image: TrackImg5,
+  },
+  {
+    heading: "Data & Marketing Ops",
+    desc: "Scale with smart tools, not just smart people.",
+    tracks: [
+      "Data-Driven Decisions Without Drowning in Metrics",
+      "Building Products that People Actually Want to Buy",
+    ],
+    image: TrackImg6,
+  },
+  {
+    heading: "Social-First Brand Building",
+    desc: "Build brands that move culture, not just product.",
+    tracks: [
+      `The Social-First Framework: Turning Scrolls into Sales`,
+      `Going Viral vs. Going Valuable: The Right Bet in 2025`,
+      `Email + Social Synergy: How to Integrate Social Media and Email Marketing for Maximum Impact`,
+    ],
+    image: TrackImg7,
   },
 ];

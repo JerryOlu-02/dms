@@ -8,6 +8,7 @@ export default function StickySection({}) {
       <h4>{track.heading}</h4>
 
       <div className="event__track-content">
+        <p>{track.desc}</p>
         <p>Key Sessions:</p>
 
         <ul>
@@ -17,7 +18,9 @@ export default function StickySection({}) {
         </ul>
       </div>
 
-      <div className="event__track-img"></div>
+      <div className="event__track-img">
+        <img src={track.image} alt="image__track" />
+      </div>
     </div>
   ));
 
