@@ -12,9 +12,11 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "D": "^1.0.0",
+    "gsap": "^3.13.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "sass": "^1.88.0",
+    "swiper": "^11.2.8",
     "vite-plugin-svgr": "^4.3.0"
   },
   "devDependencies": {

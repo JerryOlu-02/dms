@@ -31,9 +31,9 @@ export default function HomePage() {
 
       <StickySection />
 
-      <WhySponsor />
-
       <WhyAttend />
+
+      <WhySponsor />
 
       <ByChrone />
 

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Outfit:wght@100..900&display=swap");
 
 :root {
-  --header-1: 70px;
+  --header-1: 64px;
   --cambon-font: 22px;
 
   --line-height-1: 64px;
@@ -42,9 +42,9 @@
 
 @media screen and (max-width: 768px) {
   :root {
-    --header-1: 48px;
+    --header-1: 40px;
 
-    --line-height-1: 48px;
+    --line-height-1: 36px;
 
     --letter-spacing-1: -2%;
   }

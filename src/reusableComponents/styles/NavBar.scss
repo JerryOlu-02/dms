@@ -8,7 +8,19 @@
   left: 0;
   z-index: 2;
   @include mixins.flex-space-between;
-  padding: 16px 120px;
+  padding: 16px 80px;
+}
+
+.nav__links {
+  list-style-type: none;
+  @include mixins.flex-row;
+  gap: 40px;
+
+  li {
+    cursor: pointer;
+    font-size: 14px;
+    color: rgba(167, 190, 212, 1);
+  }
 }
 
 .btn__container {
@@ -17,18 +29,18 @@
 }
 
 .btn-nav {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(150, 225, 255, 1);
   backdrop-filter: blur(60px);
   padding: 15.5px 24px;
   width: fit-content;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 500;
-  color: variables.$white;
+  color: rgba(0, 0, 0, 1);
 
   &:last-of-type {
-    background-color: rgba(255, 255, 255, 1);
-    color: #000;
+    background: linear-gradient(91.4deg, #407bff -11.96%, #003194 115.27%);
+    color: rgba(255, 255, 255, 1);
   }
 }
 
@@ -40,25 +52,67 @@
   color: variables.$white;
 }
 
-@media screen and (max-width: 990px) {
-  .navbar {
-    padding: 16px 10%;
-  }
+.nav__hamburger {
+  display: none;
+  cursor: pointer;
 
-  .btn-nav {
-    padding: 15.5px 16px;
-    font-size: 12px;
+  span {
+    height: 2px;
+    width: 19px;
+    border-radius: 2px;
+    background-color: variables.$white;
+    transition: transform 0.3s ease-in-out;
+
+    &:last-of-type {
+      width: 9.5px;
+    }
   }
 }
 
-@media screen and (max-width: 650px) {
+.nav__hamburger.open {
+  span {
+    &:first-of-type {
+      transform: rotate(45deg);
+      position: relative;
+      top: 2px;
+    }
+
+    &:nth-of-type(2) {
+      transform: rotate(135deg);
+      position: relative;
+      top: -4px;
+    }
+
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
   .navbar {
-    padding: 21px 5%;
+    padding: 16px 40px;
+  }
+
+  .nav__links {
+    display: none;
   }
 
   .btn-nav {
     // padding: 15.5px 16px;
     // font-size: 12px;
     display: none;
+  }
+
+  .nav__hamburger {
+    @include mixins.flex-column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    padding: 21px 20px;
   }
 }

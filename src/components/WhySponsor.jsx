@@ -1,29 +1,31 @@
 import Button from "../reusableComponents/Button";
+import { ReactComponent as IconUp } from "../assets/icon-up.svg";
 import "./styles/WhySponsor.scss";
-import WhySponsorImg from "../assets/why-sponsor.png";
+import WhySponsorImg from "../assets/sponsor.png";
 
 export default function WhySponsor() {
   return (
     <section className="why-sponsor">
       <aside className="why-sponsor__left">
         <div className="why-sponsor__description">
-          <div>Why Sponsor DMS 2.0</div>
+          <div>
+            1,500+ marketers, founders, and digital pioneers—one unmatched
+            platform.
+          </div>
 
-          <h4>Position Your Brand for Exposure at DMS 2.0</h4>
+          <h4>Become a Sponsor, Make an Impact</h4>
 
           <p>
-            Reach over 1,500 marketers, founders, and digital pioneers at DMS
-            2.0. As a sponsor, your brand will gain front-row visibility among
-            key decision-makers.
-            <br />
-            <br />
-            Take advantage of co-branded content, thought leadership
-            opportunities, and premium networking to drive impactful business
-            outcomes
+            At DMS, your brand gets front-row visibility in front of
+            decision-makers. Leverage co-branded content, thought leadership,
+            and premium networking to drive real business outcomes—from lead
+            generation to market expansion.
           </p>
         </div>
 
-        <Button>Become a sponsor</Button>
+        <Button>
+          Become a sponsor <IconUp />
+        </Button>
       </aside>
 
       <aside className="why-sponsor__right">
@@ -32,6 +34,8 @@ export default function WhySponsor() {
           alt="why-sponsor__image"
           className="why-sponsor__img"
         />
+
+        <div className="img-overlay"></div>
       </aside>
     </section>
   );

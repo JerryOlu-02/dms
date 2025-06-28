@@ -7,7 +7,7 @@ export default function SectionThree() {
   const events = eventDetails.map((event, index) => {
     return (
       <div className="event__container" key={index}>
-        <TvLogo />
+        <event.svgImage />
 
         <div className="event__content">
           <p>{event.content}</p>

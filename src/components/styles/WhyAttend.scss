@@ -6,12 +6,13 @@
   background-color: rgba(0, 5, 16, 1);
   @include mixins.flex-column;
   gap: 64px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .why-item__header {
   @include mixins.flex-column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 24px;
   width: 48%;
 
@@ -40,25 +41,26 @@
 
 .why-item__wrapper-top {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 64px;
   width: 100%;
 }
 .why-item__wrapper-bottom {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 64px;
   width: 100%;
+  padding: 0 140px;
 }
 
 .why-item {
   padding: 24px 20px;
-  border: 1px solid rgba(30, 37, 47, 1);
-  border-radius: 16px;
+  // border: 1px solid rgba(30, 37, 47, 1);
+  // border-radius: 16px;
 
   @include mixins.flex-column;
-  align-items: flex-start;
-  gap: 48px;
+  align-items: center;
+  gap: 32px;
 
   svg {
     width: 24px;
@@ -68,17 +70,19 @@
 
 .why-item__content {
   @include mixins.flex-column;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
 
   p {
-    color: rgba(210, 233, 255, 1);
+    color: rgba(167, 190, 212, 1);
     @include mixins.p1;
     font-weight: 400;
 
     &:first-of-type {
       color: rgba(117, 216, 255, 1);
       @include mixins.cambon;
+      font-size: 14px;
       line-height: 100%;
       letter-spacing: 2%;
     }
@@ -100,12 +104,30 @@
     width: 60%;
   }
 
+  .why-item__wrapper-top,
+  .why-item__wrapper-bottom {
+    gap: 20px;
+  }
+
+  // .why-item__wrapper-top {
+  //   .why-item {
+  //     &:last-of-type {
+  //       grid-column: span 2;
+  //     }
+  //   }
+  // }
+}
+
+@media screen and (max-width: 1070px) {
   .why-item__wrapper-top {
     .why-item {
       &:last-of-type {
         grid-column: span 2;
       }
     }
+  }
+  .why-item__wrapper-bottom {
+    padding: 0;
   }
 }
 
@@ -175,7 +197,7 @@
 
 @media screen and (max-width: 550px) {
   .why-attend {
-    padding: 80px 18px;
+    padding: 80px 20px;
   }
 
   .why-item__header {

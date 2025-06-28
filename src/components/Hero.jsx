@@ -12,23 +12,23 @@ export default function Hero() {
         <NavBar />
 
         <div className="hero__content">
+          <p className="hero__sub-heading">A Chrone Event</p>
+
           <div className="hero__description">
             <h1>
-              The Future of <br />
-              <span>eCommerce</span>
+              A Digital <br />
+              Marketing <br />
+              <span>Summit</span>
             </h1>
 
-            <p>
-              Empowering brands to grow, expanding market reach, and driving
-              innovation to shape a better future.
-            </p>
+            <p>The Playbook for Brands That Want to Dominate the Market</p>
           </div>
 
           <Button>Book a Seat</Button>
         </div>
-      </section>
 
-      <Sponsors />
+        <Sponsors />
+      </section>
     </>
   );
 }

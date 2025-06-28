@@ -2,7 +2,7 @@
 @use "/src/styles/mixins";
 
 .section-three {
-  background-color: rgba(0, 7, 24, 1);
+  background-color: rgba(0, 5, 16, 1);
   padding: 150px 200px;
   @include mixins.flex-center;
   flex-direction: column;
@@ -13,13 +13,13 @@
   text-align: center;
   @include mixins.flex-center;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
 
   h3 {
     font-weight: 500;
     @include mixins.h3;
     color: variables.$white;
-    @include mixins.outfit;
+    // @include mixins.outfit;
     width: 85%;
   }
 
@@ -109,6 +109,7 @@
 @media screen and (max-width: 990px) {
   .section-three__header {
     width: 80%;
+    gap: 32px;
   }
 
   .section-three__content {
@@ -134,11 +135,11 @@
 
 @media screen and (max-width: 650px) {
   .section-three {
-    padding: 80px 18px;
+    padding: 80px 20px;
   }
 
   .section-three__header {
-    gap: 12px;
+    gap: 24px;
 
     h3 {
       width: 100%;

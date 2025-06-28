@@ -7,6 +7,13 @@ import { ReactComponent as WhyIcon3 } from "../assets/why-3.svg";
 import { ReactComponent as WhyIcon4 } from "../assets/why-4.svg";
 import { ReactComponent as WhyIcon5 } from "../assets/why-5.svg";
 
+// These imports are used to display svg information on the "SectionThree" section/components on the website
+import { ReactComponent as DetailIcon1 } from "../assets/svg/detail-1.svg";
+import { ReactComponent as DetailIcon2 } from "../assets/svg/detail-2.svg";
+import { ReactComponent as DetailIcon3 } from "../assets/svg/detail-3.svg";
+import { ReactComponent as DetailIcon4 } from "../assets/svg/detail-4.svg";
+import { ReactComponent as DetailIcon5 } from "../assets/svg/detail-5.svg";
+
 // These imports are used to display svg information on the "Roadmap" section/components on the website
 import { ReactComponent as RoadmapOneSvg } from "../assets/roadmap-1.svg";
 import { ReactComponent as RoadmapTwoSvg } from "../assets/roadmap-2.svg";
@@ -63,22 +70,27 @@ export const WHY__ITEMS = [
 // These objects are used to display information on the "Section Three" section/component on the website
 export const EVENT__DETAILS = [
   {
+    svgImage: DetailIcon1,
     content: "Registered Attendees",
     attendees: 4000,
   },
   {
+    svgImage: DetailIcon2,
     content: "Sponsors and Partners",
     attendees: "50+",
   },
   {
+    svgImage: DetailIcon3,
     content: "Event Tracks",
     attendees: 8,
   },
   {
+    svgImage: DetailIcon4,
     content: "Interactive Panel ",
     attendees: 4,
   },
   {
+    svgImage: DetailIcon5,
     content: "Class Speakers",
     attendees: 8,
   },
@@ -197,33 +209,33 @@ export const EVENT__TRACKS = [
     ],
     image: TrackImg4,
   },
-  {
-    heading: "Funnels, Flows & Paid Systems",
-    desc: "The traffic isn't the prolem. It's your pipeline.",
-    tracks: [
-      "Funnel Redesigns That Fixed 6-Figure Leaks",
-      "Automating Leads Without Losing Human Touch",
-      "Meta, Google, TikTok: Paid Ads That Still Work",
-    ],
-    image: TrackImg5,
-  },
-  {
-    heading: "Data & Marketing Ops",
-    desc: "Scale with smart tools, not just smart people.",
-    tracks: [
-      "Data-Driven Decisions Without Drowning in Metrics",
-      "Building Products that People Actually Want to Buy",
-    ],
-    image: TrackImg6,
-  },
-  {
-    heading: "Social-First Brand Building",
-    desc: "Build brands that move culture, not just product.",
-    tracks: [
-      `The Social-First Framework: Turning Scrolls into Sales`,
-      `Going Viral vs. Going Valuable: The Right Bet in 2025`,
-      `Email + Social Synergy: How to Integrate Social Media and Email Marketing for Maximum Impact`,
-    ],
-    image: TrackImg7,
-  },
+  // {
+  //   heading: "Funnels, Flows & Paid Systems",
+  //   desc: "The traffic isn't the prolem. It's your pipeline.",
+  //   tracks: [
+  //     "Funnel Redesigns That Fixed 6-Figure Leaks",
+  //     "Automating Leads Without Losing Human Touch",
+  //     "Meta, Google, TikTok: Paid Ads That Still Work",
+  //   ],
+  //   image: TrackImg5,
+  // },
+  // {
+  //   heading: "Data & Marketing Ops",
+  //   desc: "Scale with smart tools, not just smart people.",
+  //   tracks: [
+  //     "Data-Driven Decisions Without Drowning in Metrics",
+  //     "Building Products that People Actually Want to Buy",
+  //   ],
+  //   image: TrackImg6,
+  // },
+  // {
+  //   heading: "Social-First Brand Building",
+  //   desc: "Build brands that move culture, not just product.",
+  //   tracks: [
+  //     `The Social-First Framework: Turning Scrolls into Sales`,
+  //     `Going Viral vs. Going Valuable: The Right Bet in 2025`,
+  //     `Email + Social Synergy: How to Integrate Social Media and Email Marketing for Maximum Impact`,
+  //   ],
+  //   image: TrackImg7,
+  // },
 ];

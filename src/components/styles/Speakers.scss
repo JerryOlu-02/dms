@@ -2,7 +2,7 @@
 @use "/src/styles/mixins";
 
 .speakers {
-  background-color: rgba(0, 7, 24, 1);
+  background-color: rgba(0, 5, 16, 1);
   padding: 120px 200px;
   @include mixins.flex-center;
   flex-direction: column;
@@ -18,7 +18,7 @@
 
   h3 {
     @include mixins.h3;
-    @include mixins.outfit;
+    // @include mixins.outfit;
     color: variables.$white;
     width: 45%;
   }
@@ -85,7 +85,7 @@
 
 @media screen and (max-width: 920px) {
   .speakers {
-    padding: 80px 18px;
+    padding: 80px 20px;
   }
 
   .speakers-header {
