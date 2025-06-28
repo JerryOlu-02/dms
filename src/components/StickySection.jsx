@@ -30,12 +30,12 @@ export default function StickySection() {
       clipPath: function () {
         return "inset(0px 0px 100% 0px)";
       },
-      stagger: ".5",
+      stagger: "1",
       ease: "none",
     });
 
     ScrollTrigger.create({
-      trigger: ".sticky-section",
+      trigger: ".sticky-section__info",
       start: "top top",
       end: "bottom bottom",
       animation: animation,

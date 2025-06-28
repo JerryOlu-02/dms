@@ -16,19 +16,21 @@ export default function NavBar() {
     <nav className="navbar">
       <h3 className="logo">D.M.S</h3>
 
-      <ul className="nav__links">
-        <li>Details</li>
-        <li>About</li>
-        <li>Speakers</li>
-        <li>Tracks</li>
-      </ul>
+      <div className={`nav__container ${activeClass}`}>
+        <ul className={`nav__links ${activeClass}`}>
+          <li>Details</li>
+          <li>About</li>
+          <li>Speakers</li>
+          <li>Tracks</li>
+        </ul>
 
-      <div className="btn__container">
-        <Button className="btn-nav">
-          Book a sponsor <IconUp />
-        </Button>
+        <div className={`btn__container ${activeClass}`}>
+          <Button className="btn-nav">
+            Book a sponsor <IconUp />
+          </Button>
 
-        <Button className="btn-nav">Book a Seat</Button>
+          <Button className="btn-nav">Book a Seat</Button>
+        </div>
       </div>
 
       <div
