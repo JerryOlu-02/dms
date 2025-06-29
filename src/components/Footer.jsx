@@ -1,6 +1,13 @@
+import useSectionContext from "../utils/useSectionContext";
 import "./styles/Footer.scss";
 
 export default function Footer() {
+  const handleScrollToSection = function (ref) {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const { tracksRef, speakersRef, aboutRef, roadmapRef } = useSectionContext();
+
   return (
     <section className="footer">
       <div className="footer__logo">
@@ -29,10 +36,12 @@ export default function Footer() {
           <h5>Sections</h5>
 
           <ul>
-            <li>About</li>
-            <li>Roadmap</li>
-            <li>Event Tracks</li>
-            <li>Speakers</li>
+            <li onClick={() => handleScrollToSection(aboutRef)}>About</li>
+            <li onClick={() => handleScrollToSection(roadmapRef)}>Roadmap</li>
+            <li onClick={() => handleScrollToSection(tracksRef)}>
+              Event Tracks
+            </li>
+            <li onClick={() => handleScrollToSection(speakersRef)}>Speakers</li>
           </ul>
         </div>
 

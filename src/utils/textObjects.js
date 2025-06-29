@@ -180,15 +180,14 @@ export const EVENT__TRACKS = [
     heading: "The Creative Systems",
     desc: "Storytelling, but with structure.",
     tracks: [
-      "7-Figure Scaling Playbook for Bootstrapped Brands",
-      "What Investors Want: Pitching Beyond the Numbers",
-      "Playing Big in a “Saturated” Market",
-      "Niche Specialization: How to Find, Own, and Scale Your Unique Market",
+      "Script. Shoot. Scale: The Creator-Operator Framework",
+      "Product Design as Storytelling: How Your Product Tells a Better Story Than Ads",
+      "Creating Series-Based Content That Hooks & Converts",
     ],
     image: TrackImg2,
   },
   {
-    heading: "Scaling, Markets & Capital",
+    heading: "Scaling, Markets & Capital Confra",
     desc: "Playing the long game.",
     tracks: [
       "7-Figure Scaling Playbook for Bootstrapped Brands",
@@ -200,7 +199,7 @@ export const EVENT__TRACKS = [
   },
   {
     heading: "Creator-Led Commerce",
-    desc: "Creators are the new retailers. Learn how to influence income.",
+    desc: "Creators are the new retailers.",
     tracks: [
       "Building Brand Collabs That Actually Sell",
       "The Rise of User-Generated Revenue",

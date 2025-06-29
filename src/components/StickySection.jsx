@@ -4,12 +4,18 @@ import "./styles/StickySection.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import useSectionContext from "../utils/useSectionContext";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function StickySection() {
-  const imgContainer = useRef();
+  const sectionRef = useRef(null);
+  const { activateTracksRef } = useSectionContext();
+
+  useEffect(() => {
+    activateTracksRef(sectionRef);
+  }, []);
 
   useGSAP(() => {
     // const details = gsap.utils.toArray(".event__track-content");
@@ -35,17 +41,17 @@ export default function StickySection() {
     });
 
     ScrollTrigger.create({
-      trigger: ".sticky-section__info",
+      trigger: ".event__track",
       start: "top top",
       end: "bottom bottom",
       animation: animation,
-      scrub: 1,
+      scrub: true,
     });
   });
 
   const renderContent = eventTracks.map((track, index) => (
     <div key={index} className="event__track-mobile">
-      <div ref={imgContainer} className="event__track-img-div-mobile">
+      <div className="event__track-img-div-mobile">
         <img src={track.image} alt="image__track" />
       </div>
 
@@ -88,7 +94,7 @@ export default function StickySection() {
   ));
 
   return (
-    <section className="sticky-section">
+    <section ref={sectionRef} className="sticky-section">
       <aside className="sticky-section__content">
         <div className="sticky-section__text">
           <h3>Explore Our Event Tracks</h3>

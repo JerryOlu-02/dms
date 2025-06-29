@@ -5,10 +5,20 @@ import RoadmapImage1 from "../assets/roadmap-1.png";
 import RoadmapImage2 from "../assets/roadmap-2.jpg";
 import RoadmapImage3 from "../assets/roadmap-3.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import useSectionContext from "../utils/useSectionContext";
+import { useEffect, useRef } from "react";
 
 // import Button from "../reusableComponents/Button";
 
 export default function Roadmap() {
+  const roadmapRef = useRef(null);
+
+  const { activateRoadmapRef } = useSectionContext();
+
+  useEffect(() => {
+    activateRoadmapRef(roadmapRef);
+  }, []);
+
   const roadmapItems = roadmapDetails.map((item, index) => {
     return (
       <div key={index} className="roadmap-item">
@@ -26,7 +36,7 @@ export default function Roadmap() {
   });
 
   return (
-    <section className="roadmap">
+    <section ref={roadmapRef} className="roadmap">
       <div className="roadmap-header">
         <h3>The Roadmap for the Day</h3>
 

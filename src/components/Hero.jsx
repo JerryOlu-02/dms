@@ -3,7 +3,7 @@ import NavBar from "../reusableComponents/NavBar";
 import Sponsors from "../reusableComponents/Sponsors";
 import "./styles/Hero.scss";
 
-export default function Hero() {
+export default function Hero({ children }) {
   return (
     <>
       <section className="hero">

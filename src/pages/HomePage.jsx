@@ -9,6 +9,7 @@ import StickySection from "../components/StickySection";
 import VideoSection from "../components/VideoSection";
 import WhyAttend from "../components/WhyAttend";
 import WhySponsor from "../components/WhySponsor";
+import NavBar from "../reusableComponents/NavBar";
 import "./HomePage.scss";
 // import SectionTwo from "../components/SectionTwo";
 

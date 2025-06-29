@@ -1,8 +1,17 @@
 import "./styles/Speakers.scss";
 import { SPEAKERS as speakers } from "../utils/textObjects";
 import Button from "../reusableComponents/Button";
+import { useEffect, useRef } from "react";
+import useSectionContext from "../utils/useSectionContext";
 
 export default function Speakers() {
+  const speakersRef = useRef(null);
+  const { activateSpeakersRef } = useSectionContext();
+
+  useEffect(() => {
+    activateSpeakersRef(speakersRef);
+  }, []);
+
   const speakerItem = speakers.map((item, index) => {
     return (
       <div className="speaker-item" key={index}>
@@ -22,7 +31,7 @@ export default function Speakers() {
   });
 
   return (
-    <section className="speakers">
+    <section ref={speakersRef} className="speakers">
       <aside className="speakers-header">
         <h3>Get to Know Our Speakers</h3>
 
