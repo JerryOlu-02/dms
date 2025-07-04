@@ -11,43 +11,47 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 export default function StickySection() {
   const sectionRef = useRef(null);
+  const stickyRef = useRef(null);
   const { activateTracksRef } = useSectionContext();
 
   useEffect(() => {
     activateTracksRef(sectionRef);
   }, []);
 
-  useGSAP(() => {
-    // const details = gsap.utils.toArray(".event__track-content");
-    const photos = gsap.utils.toArray(".event__track-img-div");
+  useGSAP(
+    () => {
+      // const details = gsap.utils.toArray(".event__track-content");
+      const photos = gsap.utils.toArray(".event__track-img-div");
 
-    photos.forEach(function (item, index) {
-      item.style.zIndex = photos.length - index;
-    });
+      photos.forEach(function (item, index) {
+        item.style.zIndex = photos.length - index;
+      });
 
-    gsap.set(".event__track-img-div", {
-      clipPath: function () {
-        return "inset(0px 0px  0px 0px)";
-      },
-      // autoAlpha: 1,
-    });
+      gsap.set(".event__track-img-div", {
+        clipPath: function () {
+          return "inset(0px 0px  0px 0px)";
+        },
+        // autoAlpha: 1,
+      });
 
-    const animation = gsap.to(".event__track-img-div:not(:last-child)", {
-      clipPath: function () {
-        return "inset(0px 0px 100% 0px)";
-      },
-      stagger: "1",
-      ease: "none",
-    });
+      const animation = gsap.to(".event__track-img-div:not(:last-child)", {
+        clipPath: function () {
+          return "inset(0px 0px 100% 0px)";
+        },
+        stagger: "1",
+        ease: "none",
+      });
 
-    ScrollTrigger.create({
-      trigger: ".event__track",
-      start: "top top",
-      end: "bottom bottom",
-      animation: animation,
-      scrub: true,
-    });
-  });
+      ScrollTrigger.create({
+        trigger: ".event__track",
+        start: "top top",
+        end: "bottom bottom",
+        animation: animation,
+        scrub: true,
+      });
+    },
+    { scope: stickyRef }
+  );
 
   const renderContent = eventTracks.map((track, index) => (
     <div key={index} className="event__track-mobile">
@@ -108,7 +112,7 @@ export default function StickySection() {
       </aside>
 
       <aside className="sticky-section__info">
-        <div className="sticky-section__info-wrapper">
+        <div ref={stickyRef} className="sticky-section__info-wrapper">
           <div className="event__track">
             <div className="event__track-img">{renderEventImages}</div>
             <div className="event__track-content">{renderEventContent}</div>

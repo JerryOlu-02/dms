@@ -12,16 +12,17 @@ export default function Hero({ children }) {
         <NavBar />
 
         <div className="hero__content">
-          <p className="hero__sub-heading">A Chrone Event</p>
+          <p className="hero__sub-heading">
+            Event By Chrone Influitive Company
+          </p>
 
           <div className="hero__description">
             <h1>
-              A Digital <br />
-              Marketing <br />
-              <span>Summit</span>
+              Africa’s New <br />
+              Growth Engine
             </h1>
 
-            <p>The Playbook for Brands That Want to Dominate the Market</p>
+            <p>Scaling Content and eCommerce</p>
           </div>
 
           <Button>Book a Seat</Button>

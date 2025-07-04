@@ -9,6 +9,12 @@
   z-index: 2;
   @include mixins.flex-space-between;
   padding: 16px 80px;
+
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navbar.sticky {
+  background-color: rgba(8, 16, 51, 1);
 }
 
 .nav__container {
@@ -63,6 +69,7 @@
   font-style: normal;
   color: variables.$white;
   width: 20%;
+  @include mixins.flex-center;
 }
 
 .nav__hamburger {

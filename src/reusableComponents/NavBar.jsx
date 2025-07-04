@@ -1,5 +1,6 @@
 import Button from "./Button";
 import "./styles/NavBar.scss";
+import { ReactComponent as LogoSvg } from "../assets/hero__img.svg";
 import { ReactComponent as IconUp } from "../assets/icon-up.svg";
 import { useState, useEffect } from "react";
 import useSectionContext from "../utils/useSectionContext";
@@ -40,8 +41,10 @@ export default function NavBar() {
   const { tracksRef, speakersRef, aboutRef, detailsRef } = useSectionContext();
 
   return (
-    <nav className="navbar">
-      <h3 className="logo">D.M.S</h3>
+    <nav className={`navbar ${stickyClass}`}>
+      <h3 className="logo">
+        <LogoSvg />
+      </h3>
 
       <div className={`nav__container ${activeClass}`}>
         <ul className={`nav__links ${activeClass}`}>

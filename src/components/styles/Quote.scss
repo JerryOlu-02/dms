@@ -43,7 +43,7 @@
   @include mixins.flex-center;
   flex-direction: column;
   gap: 20px;
-  width: 32%;
+  width: 25%;
 
   p {
     @include mixins.cambon;
@@ -66,31 +66,31 @@
 
 @media screen and (max-width: 1590px) {
   .quote__content {
-    width: 35%;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 1350px) {
   .quote__content {
-    width: 50%;
+    width: 35%;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .quote__content {
-    width: 60%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 850px) {
   .quote__content {
-    width: 70%;
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 720px) {
   .quote__content {
-    width: 80%;
+    width: 70%;
   }
 }
 

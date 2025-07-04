@@ -42,11 +42,12 @@
   @include mixins.flex-column;
   margin-top: 210px;
   margin-bottom: 100px;
-  gap: 60px;
+  gap: 40px;
   width: 100%;
 
   .btn {
     position: relative;
+    margin-top: 24px;
     background: linear-gradient(91.4deg, #407bff -11.96%, #003194 115.27%);
 
     // &::before {
@@ -72,12 +73,12 @@
 
 .hero__description {
   @include mixins.flex-column;
-  gap: 28px;
+  gap: 32px;
   width: fit-content;
 
   h1 {
     // @include mixins.outfit;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 76px;
     letter-spacing: -2%;
     font-size: 88px;
@@ -162,11 +163,12 @@
   .hero__content {
     margin-top: 150px;
     align-items: flex-start;
-    gap: 32px;
+    gap: 24px;
 
     .btn {
       justify-content: flex-start;
       padding-left: 32px;
+      margin-top: 8px;
 
       &::before {
         inset: -5px;

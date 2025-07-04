@@ -72,27 +72,27 @@ export const EVENT__DETAILS = [
   {
     svgImage: DetailIcon1,
     content: "Registered Attendees",
-    attendees: 4000,
+    attendees: 500,
   },
   {
     svgImage: DetailIcon2,
     content: "Sponsors and Partners",
-    attendees: "50+",
+    attendees: "10",
   },
   {
     svgImage: DetailIcon3,
     content: "Event Tracks",
-    attendees: 8,
+    attendees: 4,
   },
   {
     svgImage: DetailIcon4,
     content: "Interactive Panel ",
-    attendees: 4,
+    attendees: 5,
   },
   {
     svgImage: DetailIcon5,
-    content: "Class Speakers",
-    attendees: 8,
+    content: "Keynote Speakers",
+    attendees: 2,
   },
 ];
 

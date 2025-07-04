@@ -88,6 +88,11 @@
       @include mixins.media-breakpoint-p;
     }
   }
+
+  .video-section__vid {
+    height: unset;
+    aspect-ratio: 2 / 1;
+  }
 }
 
 @media screen and (max-width: 650px) {

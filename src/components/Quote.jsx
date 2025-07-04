@@ -9,9 +9,7 @@ export default function Quote() {
       </div>
 
       <aside className="quote__content">
-        <p>
-          People don’t buy products, they buy better versions of themselves.
-        </p>
+        <p>Success answers more to consistency rather than intensity.</p>
 
         <p className="quote__name">- Oluwole Joshua</p>
       </aside>
