@@ -3,7 +3,7 @@
 
 .speakers {
   background-color: rgba(0, 5, 16, 1);
-  padding: 120px 200px;
+  padding: 120px 280px;
   @include mixins.flex-center;
   flex-direction: column;
   gap: 64px;
@@ -58,16 +58,27 @@
   h5 {
     @include mixins.h5;
     color: variables.$white;
+    font-weight: 500;
   }
 
   p {
-    @include mixins.geist-mono;
-    @include mixins.p2;
-    background: linear-gradient(180deg, #aba2ff 0%, #02d7f2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include mixins.cambon;
+    @include mixins.p1;
+    color: rgba(117, 216, 255, 1);
     letter-spacing: 0%;
     line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1660px) {
+  .speakers {
+    padding: 120px 250px;
+  }
+}
+
+@media screen and (max-width: 1590px) {
+  .speakers {
+    padding: 120px 200px;
   }
 }
 
