@@ -36,6 +36,7 @@ export default function NavBar() {
   // Handle Smooth Scroll Into Section
   const handleScrollToSection = function (ref) {
     ref.current?.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false);
   };
 
   const { tracksRef, speakersRef, aboutRef, detailsRef } = useSectionContext();
@@ -50,7 +51,7 @@ export default function NavBar() {
         <ul className={`nav__links ${activeClass}`}>
           <li onClick={() => handleScrollToSection(detailsRef)}>Details</li>
           <li onClick={() => handleScrollToSection(aboutRef)}>About</li>
-          <li onClick={() => handleScrollToSection(speakersRef)}>Speakers</li>
+          {/* <li onClick={() => handleScrollToSection(speakersRef)}>Speakers</li> */}
           <li onClick={() => handleScrollToSection(tracksRef)}>Tracks</li>
         </ul>
 

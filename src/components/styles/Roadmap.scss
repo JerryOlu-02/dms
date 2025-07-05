@@ -71,6 +71,11 @@
   }
 }
 
+.swiper,
+.swiper-wrapper {
+  z-index: unset;
+}
+
 // .roadmap-item__wrapper {
 //   @include mixins.flex-center;
 //   flex-direction: column;
