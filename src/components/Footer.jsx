@@ -41,7 +41,7 @@ export default function Footer() {
             <li onClick={() => handleScrollToSection(tracksRef)}>
               Event Tracks
             </li>
-            <li onClick={() => handleScrollToSection(speakersRef)}>Speakers</li>
+            {/* <li onClick={() => handleScrollToSection(speakersRef)}>Speakers</li> */}
           </ul>
         </div>
 

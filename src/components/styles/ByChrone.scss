@@ -158,7 +158,9 @@
   .by-chrone__content {
     h3 {
       @include mixins.media-breakpoint-h3;
-      line-height: 48px;
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -4%;
     }
 
     p {
