@@ -4,6 +4,7 @@ import { ReactComponent as LogoSvg } from "../assets/hero__img.svg";
 import { ReactComponent as IconUp } from "../assets/icon-up.svg";
 import { useState, useEffect } from "react";
 import useSectionContext from "../utils/useSectionContext";
+import LinkComp from "./Link";
 
 export default function NavBar() {
   //State to manage Navbar Content Visibility
@@ -60,7 +61,13 @@ export default function NavBar() {
             Book a sponsor <IconUp />
           </Button>
 
-          <Button className="btn-nav">Book a Seat</Button>
+          <Button className="btn-nav">
+            <LinkComp
+              url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
+            >
+              Book a seat
+            </LinkComp>
+          </Button>
         </div>
       </div>
 

@@ -1,4 +1,5 @@
 import Button from "../reusableComponents/Button";
+import LinkComp from "../reusableComponents/Link";
 import { ReactComponent as IconUp } from "../assets/icon-up.svg";
 import "./styles/ByChrone.scss";
 import ByChroneImg from "../assets/by-chrone.png";
@@ -25,7 +26,13 @@ export default function ByChrone() {
         </div>
 
         <Button className="by-chrone__btn">
-          Visit Our Website <IconUp />
+          <a
+            href={`https://chronecompany.org/`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Visit Our Website <IconUp />
+          </a>
         </Button>
 
         <div className="by-chrone__overlay"></div>

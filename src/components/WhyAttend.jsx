@@ -1,5 +1,6 @@
 import { WHY__ITEMS as whyItems } from "../utils/textObjects";
 import Button from "../reusableComponents/Button";
+import LinkComp from "../reusableComponents/Link";
 import "./styles/WhyAttend.scss";
 
 export default function WhyAttend() {
@@ -44,7 +45,13 @@ export default function WhyAttend() {
 
         <p>Gain the tools and knowledge to elevate your brand and career.</p>
 
-        <Button>Book a Seat</Button>
+        <Button>
+          <LinkComp
+            url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
+          >
+            Book a Seat
+          </LinkComp>
+        </Button>
       </aside>
 
       <aside className="why-item__wrapper">
