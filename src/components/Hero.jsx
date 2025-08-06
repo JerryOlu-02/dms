@@ -26,12 +26,11 @@ export default function Hero({ children }) {
             <p>Scaling Content and eCommerce</p>
           </div>
 
-          <Button>
-            <LinkComp
-              url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
-            >
-              Book a Seat
-            </LinkComp>
+          <Button
+            link
+            url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
+          >
+            Book a Seat
           </Button>
         </div>
 

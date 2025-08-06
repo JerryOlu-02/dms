@@ -55,11 +55,10 @@
   font-size: 14px;
   font-weight: 500;
   color: rgba(0, 0, 0, 1);
-
-  &:last-of-type {
-    background: linear-gradient(91.4deg, #407bff -11.96%, #003194 115.27%);
-    color: rgba(255, 255, 255, 1);
-  }
+}
+.btn-nav.link {
+  background: linear-gradient(91.4deg, #407bff -11.96%, #003194 115.27%);
+  color: rgba(255, 255, 255, 1);
 }
 
 .logo {

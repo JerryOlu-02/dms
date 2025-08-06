@@ -45,12 +45,11 @@ export default function WhyAttend() {
 
         <p>Gain the tools and knowledge to elevate your brand and career.</p>
 
-        <Button>
-          <LinkComp
-            url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
-          >
-            Book a Seat
-          </LinkComp>
+        <Button
+          link
+          url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
+        >
+          Book a Seat
         </Button>
       </aside>
 
