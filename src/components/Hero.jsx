@@ -1,7 +1,10 @@
 import Button from "../reusableComponents/Button";
 import LinkComp from "../reusableComponents/Link";
 import NavBar from "../reusableComponents/NavBar";
+import Popup from "../reusableComponents/Popup";
 import Sponsors from "../reusableComponents/Sponsors";
+import { ReactComponent as IconUp } from "../assets/icon-up.svg";
+
 import "./styles/Hero.scss";
 
 export default function Hero({ children }) {
@@ -26,12 +29,16 @@ export default function Hero({ children }) {
             <p>Scaling Content and eCommerce</p>
           </div>
 
-          <Button
+          {/* <Button
             link
             url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
           >
             Book a Seat
-          </Button>
+          </Button> */}
+
+          <Popup>
+            Book A Seat <IconUp />
+          </Popup>
         </div>
 
         <Sponsors />

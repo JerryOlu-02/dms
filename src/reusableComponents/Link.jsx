@@ -1,10 +1,13 @@
 export default function LinkComp({ className, url, children }) {
   return (
-    <p className={className}>
-      <a
-        href={url}
-        target="_blank"
-        rel="noreferrer"
+    <a
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+      className={className}
+      style={{ color: "#fff", fontWeight: "600", textDecoration: "none" }}
+    >
+      <p
         style={{
           color: "#fff",
           fontWeight: "600",
@@ -13,7 +16,7 @@ export default function LinkComp({ className, url, children }) {
         }}
       >
         {children}
-      </a>
-    </p>
+      </p>
+    </a>
   );
 }

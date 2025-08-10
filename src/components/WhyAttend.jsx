@@ -49,7 +49,7 @@ export default function WhyAttend() {
           link
           url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
         >
-          Book a Seat
+          Book A Seat
         </Button>
       </aside>
 

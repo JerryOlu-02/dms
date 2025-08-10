@@ -6,10 +6,20 @@
   padding: 16px 51px;
   border-radius: 8px;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 16px;
+  font-size: 14px;
   border-width: 0;
   width: fit-content;
   @include mixins.flex-center;
   gap: 8px;
   cursor: pointer;
+}
+
+.btn-popup {
+  svg {
+    fill: #fff;
+
+    path {
+      stroke: #fff;
+    }
+  }
 }
