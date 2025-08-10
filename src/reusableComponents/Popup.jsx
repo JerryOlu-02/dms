@@ -52,7 +52,6 @@ export default function Popup({
           width: "100%",
         }}
         allow="payment"
-        title="Mainstack Checkout"
       ></iframe>
     </>
   );

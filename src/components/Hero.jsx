@@ -29,16 +29,16 @@ export default function Hero({ children }) {
             <p>Scaling Content and eCommerce</p>
           </div>
 
-          {/* <Button
+          <Button
             link
             url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
           >
             Book a Seat
-          </Button> */}
+          </Button>
 
-          <Popup>
+          {/* <Popup>
             Book A Seat <IconUp />
-          </Popup>
+          </Popup> */}
         </div>
 
         <Sponsors />
