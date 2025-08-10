@@ -30,7 +30,7 @@ export default function Popup({
   }, []);
 
   return (
-    <section>
+    <>
       <button
         className="btn btn-popup"
         id="mainstack_checkout_btn"
@@ -54,6 +54,6 @@ export default function Popup({
         allow="payment"
         title="Mainstack Checkout"
       ></iframe>
-    </section>
+    </>
   );
 }
