@@ -25,10 +25,20 @@ export default function Footer() {
           <h5>Actions</h5>
 
           <ul>
-            <li>Book Ticket</li>
+            <li>
+              <a
+                href="https://mainstack.store/chronecompany/dmschrone2025/checkout"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book Ticket
+              </a>
+            </li>
             <li>Beacome a sponsor</li>
-            <li>Event tracks</li>
-            <li>Speakers</li>
+            <li onClick={() => handleScrollToSection(tracksRef)}>
+              Event tracks
+            </li>
+            <li onClick={() => handleScrollToSection(speakersRef)}>Speakers</li>
           </ul>
         </div>
 

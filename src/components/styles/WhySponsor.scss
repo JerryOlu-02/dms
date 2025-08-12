@@ -3,7 +3,7 @@
 
 .why-sponsor {
   background-color: rgba(1, 6, 12, 1);
-  padding: 120px 180px;
+  padding: 100px 180px;
   @include mixins.flex-center;
   flex-direction: column-reverse;
   gap: 40px;
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 1460px) {
   .why-sponsor {
-    padding: 120px 80px;
+    padding: 100px 80px;
     gap: 100px;
   }
 }
