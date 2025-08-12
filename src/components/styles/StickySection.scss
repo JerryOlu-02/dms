@@ -9,6 +9,7 @@
   justify-content: space-between;
   gap: 64px;
   position: relative;
+  background: rgba(0, 7, 24, 1);
 }
 
 .sticky-section__content {
@@ -23,12 +24,13 @@
 .sticky-section__text {
   @include mixins.flex-column;
   gap: 32px;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
 
   h3 {
     color: variables.$off-white;
     @include mixins.h3;
+    text-transform: uppercase;
     width: 55%;
     // @include mixins.outfit;
     line-height: 58px;
@@ -215,8 +217,8 @@
   }
 
   .sticky-section__text {
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     gap: 24px;
 
     h3 {

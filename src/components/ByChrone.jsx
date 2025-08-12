@@ -31,7 +31,7 @@ export default function ByChrone() {
             target="_blank"
             rel="noreferrer"
           >
-            Visit Our Website <IconUp />
+            View Our Website <IconUp />
           </a>
         </Button>
 

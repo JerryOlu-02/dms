@@ -134,33 +134,33 @@ export const ROADMAP__DETAILS = [
 export const SPEAKERS = [
   {
     image: Speaker1Img,
-    name: "Jacob Murphy",
-    position: "Founder, Editorial PHF",
+    name: "Olagoke Balogun",
+    position: "Chief Executive Officer, SoFresh",
   },
   {
     image: Speaker2Img,
-    name: "Susan Udoka",
-    position: "CEO, Francise",
+    name: "Funsho Felix ",
+    position: "Branding Strategist, Mustard",
   },
   {
     image: Speaker3Img,
-    name: "Patricia Adeola",
-    position: "Founder, Editorial PHF",
+    name: "To Be Announced",
+    position: "TBA",
   },
   {
     image: Speaker4Img,
-    name: "Alex Crane",
-    position: "Shopify Expert",
+    name: "To Be Announced",
+    position: "TBA",
   },
   {
     image: Speaker5Img,
-    name: "Chidinma Okoye",
-    position: "Creator",
+    name: "To Be Announced",
+    position: "TBA",
   },
   {
     image: Speaker6Img,
-    name: "Aaron Ayomide",
-    position: "Creative Editor, Rikoko",
+    name: "To Be Announced",
+    position: "TBA",
   },
 ];
 

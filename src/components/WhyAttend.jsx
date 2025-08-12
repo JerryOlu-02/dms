@@ -45,12 +45,12 @@ export default function WhyAttend() {
 
         <p>Gain the tools and knowledge to elevate your brand and career.</p>
 
-        <Button
+        {/* <Button
           link
           url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
         >
           Book A Seat
-        </Button>
+        </Button> */}
       </aside>
 
       <aside className="why-item__wrapper">

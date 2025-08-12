@@ -20,9 +20,14 @@
   gap: 32px;
 
   .btn {
-    background: rgba(150, 225, 255, 1);
     backdrop-filter: blur(60px);
-    color: rgba(0, 0, 0, 1);
+    color: variables.$white;
+
+    svg {
+      path {
+        stroke: #fff;
+      }
+    }
   }
 }
 
@@ -45,14 +50,17 @@
   }
 
   h4 {
-    @include mixins.h4;
-    font-size: 58px;
+    @include mixins.h3;
+    text-transform: uppercase;
+    font-weight: 700;
+    // font-size: 58px;
     letter-spacing: -4%;
   }
 
   p {
     @include mixins.p2;
-    line-height: 22px;
+    line-height: 26px;
+    font-size: 16px;
     letter-spacing: -1%;
     color: rgba(167, 190, 212, 1);
   }

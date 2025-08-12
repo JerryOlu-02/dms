@@ -52,14 +52,14 @@ export default function NavBar() {
         <ul className={`nav__links ${activeClass}`}>
           <li onClick={() => handleScrollToSection(detailsRef)}>Details</li>
           <li onClick={() => handleScrollToSection(aboutRef)}>About</li>
-          {/* <li onClick={() => handleScrollToSection(speakersRef)}>Speakers</li> */}
+          <li onClick={() => handleScrollToSection(speakersRef)}>Speakers</li>
           <li onClick={() => handleScrollToSection(tracksRef)}>Tracks</li>
         </ul>
 
         <div className={`btn__container ${activeClass}`}>
-          <Button className="btn-nav">
+          {/* <Button className="btn-nav">
             Be A Sponsor <IconUp />
-          </Button>
+          </Button> */}
 
           {/* <Popup /> */}
 

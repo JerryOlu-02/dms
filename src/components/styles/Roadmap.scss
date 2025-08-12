@@ -18,8 +18,10 @@
 
   h3 {
     @include mixins.h3;
-    @include mixins.outfit;
+    // @include mixins.outfit;
     color: variables.$white;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 
   p {

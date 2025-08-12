@@ -23,8 +23,8 @@ export default function WhySponsor() {
           </p>
         </div>
 
-        <Button>
-          Become a sponsor <IconUp />
+        <Button className="sponsor">
+          Become A sponsor <IconUp />
         </Button>
       </aside>
 

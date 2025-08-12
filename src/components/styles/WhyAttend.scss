@@ -20,6 +20,8 @@
     @include mixins.h3;
     @include mixins.outfit;
     color: variables.$off-white;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 
   p {

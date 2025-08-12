@@ -21,27 +21,28 @@ export default function Hero({ children }) {
           </p>
 
           <div className="hero__description">
-            <h1>
-              Africa’s New <br />
-              Growth Engine
-            </h1>
+            <h1>Africa’s New Growth Engine</h1>
 
             <p>Scaling Content and eCommerce</p>
           </div>
 
-          <Button
-            link
-            url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
-          >
-            Book a Seat
-          </Button>
+          <div className="hero__btns">
+            <Button
+              link
+              url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
+            >
+              Book A Seat
+            </Button>
+
+            <Button className="sponsor">Become A Sponsor</Button>
+          </div>
 
           {/* <Popup>
             Book A Seat <IconUp />
           </Popup> */}
         </div>
 
-        <Sponsors />
+        {/* <Sponsors /> */}
       </section>
     </>
   );

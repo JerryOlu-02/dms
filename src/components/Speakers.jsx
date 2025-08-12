@@ -40,7 +40,7 @@ export default function Speakers() {
 
       <aside className="speakers-item__wrapper">{speakerItem}</aside>
 
-      <Button>Book a Seat</Button>
+      {/* <Button>Book a Seat</Button> */}
     </section>
   );
 }

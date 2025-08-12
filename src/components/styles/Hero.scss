@@ -4,16 +4,16 @@
 .hero {
   position: relative;
   width: 100%;
-  min-height: calc(100vh + 120px);
+  min-height: calc(100vh);
   background-image: url("../../assets/hero__bg.jpg");
   background-size: cover;
   background-position-x: 60%;
   background-position-y: center;
   background-repeat: no-repeat;
   @include mixins.flex-column;
-  justify-content: flex-start;
+  justify-content: flex-end;
   @include mixins.padding;
-  padding-bottom: 140px;
+  padding-bottom: 135px;
   z-index: 1;
 }
 
@@ -41,14 +41,12 @@
   z-index: 1;
   @include mixins.flex-column;
   margin-top: 210px;
-  margin-bottom: 100px;
   gap: 40px;
   width: 100%;
 
   .btn {
     position: relative;
     margin-top: 24px;
-    background: linear-gradient(91.4deg, #407bff -11.96%, #003194 115.27%);
 
     // &::before {
     //   content: "";
@@ -79,14 +77,14 @@
   h1 {
     // @include mixins.outfit;
     font-weight: 600;
-    line-height: 90px;
-    letter-spacing: -2%;
-    font-size: 100px;
+    line-height: 83px;
+    letter-spacing: -4%;
+    font-size: 80px;
     text-transform: uppercase;
-    width: 90%;
+    width: 70%;
 
     @media screen and (max-width: 1250px) {
-      font-size: 80px;
+      font-size: 70px;
       line-height: 70px;
     }
 
@@ -97,13 +95,13 @@
     }
 
     @media screen and (max-width: 650px) {
-      font-size: 56px;
-      line-height: 60px;
+      font-size: 48px;
+      line-height: 52px;
     }
 
     @media screen and (max-width: 405px) {
-      font-size: 52px;
-      line-height: 50px;
+      font-size: 48px;
+      line-height: 52px;
     }
 
     @media screen and (max-width: 280px) {
@@ -131,6 +129,12 @@
   //   -webkit-background-clip: text;
   //   -webkit-text-fill-color: transparent;
   // }
+}
+
+.hero__btns {
+  @include mixins.flex-row;
+  gap: 24px;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 990px) {
@@ -169,16 +173,27 @@
       );
   }
 
-  .hero__content {
-    margin-top: 150px;
-    align-items: flex-start;
-    gap: 24px;
+  .hero__btns {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
 
     .btn {
-      justify-content: flex-start;
+      width: 100%;
+    }
+  }
+
+  .hero__content {
+    margin-top: 150px;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+
+    .btn {
+      justify-content: center;
       padding-left: 32px;
       margin-top: 8px;
-      width: fit-content;
+      // width: fit-content;
 
       &::before {
         inset: -5px;
@@ -191,14 +206,15 @@
 
   .hero__description {
     gap: 20px;
+    align-items: center;
 
     h1 {
-      text-align: left;
+      text-align: center;
     }
 
     p {
       width: 100%;
-      text-align: left;
+      text-align: center;
       font-size: 14px;
       line-height: 18px;
       letter-spacing: -2%;
