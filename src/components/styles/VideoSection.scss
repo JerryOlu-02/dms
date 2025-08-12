@@ -2,7 +2,7 @@
 @use "/src/styles/mixins";
 
 .video-section {
-  padding: 150px 200px;
+  padding: 100px 200px;
   background-color: rgba(0, 5, 16, 1);
   @include mixins.flex-column;
   align-items: center;
@@ -18,7 +18,7 @@
 
   h3 {
     font-size: var(--header-1);
-    font-weight: 500;
+    font-weight: 700;
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
     width: 65%;

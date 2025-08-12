@@ -5,11 +5,15 @@ export default function LinkComp({ className, url, children }) {
       target="_blank"
       rel="noreferrer"
       className={className}
-      style={{ color: "#fff", fontWeight: "600", textDecoration: "none" }}
+      style={{
+        // color: "#fff",
+        fontWeight: "600",
+        textDecoration: "none",
+      }}
     >
       <p
         style={{
-          color: "#fff",
+          // color: "#fff",
           fontWeight: "600",
           textDecoration: "none",
           fontSize: "14px",

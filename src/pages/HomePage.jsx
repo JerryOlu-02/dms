@@ -1,4 +1,5 @@
 import ByChrone from "../components/ByChrone";
+import Date from "../components/Date";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Plans from "../components/Plans";
@@ -25,6 +26,8 @@ export default function HomePage() {
       <Quote />
 
       <VideoSection />
+
+      <Date />
 
       <SectionThree />
 

@@ -64,7 +64,12 @@ export default function Plans() {
             </p>
           </div>
 
-          <Button>Get Ticket</Button>
+          <Button
+            link
+            url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
+          >
+            Get Ticket
+          </Button>
 
           <ul className="plan__benefits">
             <li>
@@ -113,7 +118,12 @@ export default function Plans() {
             </p>
           </div>
 
-          <Button>Get Ticket</Button>
+          <Button
+            link
+            url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
+          >
+            Get Ticket
+          </Button>
 
           <ul className="plan__benefits">
             <li>
@@ -162,7 +172,12 @@ export default function Plans() {
             </p>
           </div>
 
-          <Button>Get Ticket</Button>
+          <Button
+            link
+            url={`https://mainstack.store/chronecompany/dmschrone2025/checkout`}
+          >
+            Get Ticket
+          </Button>
 
           <ul className="plan__benefits">
             <li>
