@@ -52,8 +52,6 @@ export default function HomePage() {
       <ByChrone />
 
       <Footer />
-
-      <CountdownTimer />
     </>
   );
 }
