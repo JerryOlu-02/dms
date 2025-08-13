@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import "./styles/VideoSection.scss";
 import useSectionContext from "../utils/useSectionContext";
+import { WhatAwaits } from "./SectionThree";
 
 export default function VideoSection() {
   const sectionRef = useRef(null);
@@ -17,7 +18,7 @@ export default function VideoSection() {
         <h3>DMS 2.0: Where the Future of Marketing Begins</h3>
       </div>
 
-      <div className="video-section__vid"></div>
+      <WhatAwaits />
     </section>
   );
 }

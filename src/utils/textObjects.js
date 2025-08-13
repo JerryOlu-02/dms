@@ -144,24 +144,19 @@ export const SPEAKERS = [
   },
   {
     image: Speaker3Img,
-    name: "To Be Announced",
-    position: "TBA",
+    name: "DammyB",
+    position: "MSME Growth Consultant ",
   },
   {
     image: Speaker4Img,
-    name: "To Be Announced",
-    position: "TBA",
+    name: "Joan Egbuonu",
+    position: "Chief Operating Officer, BuyBetter",
   },
-  {
-    image: Speaker5Img,
-    name: "To Be Announced",
-    position: "TBA",
-  },
-  {
-    image: Speaker6Img,
-    name: "To Be Announced",
-    position: "TBA",
-  },
+  // {
+  //   image: Speaker5Img,
+  //   name: "Joan Egbuonu",
+  //   position: "TBA",
+  // },
 ];
 
 export const EVENT__TRACKS = [

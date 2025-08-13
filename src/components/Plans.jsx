@@ -158,7 +158,7 @@ export default function Plans() {
 
               <span className="people">
                 <People />
-                2 people per group
+                4 people per group
               </span>
             </div>
 

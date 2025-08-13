@@ -2,7 +2,7 @@
 @use "/src/styles/mixins";
 
 .video-section {
-  padding: 100px 200px;
+  padding: 100px 0;
   background-color: rgba(0, 5, 16, 1);
   @include mixins.flex-column;
   align-items: center;
@@ -21,19 +21,19 @@
     font-weight: 700;
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
-    width: 65%;
+    width: 50%;
     color: rgba(255, 252, 244, 1);
     text-transform: uppercase;
 
     @media screen and (max-width: 1590px) {
-      width: 75%;
+      width: 65%;
     }
 
     @media screen and (max-width: 1150px) {
       width: 80%;
     }
     @media screen and (max-width: 1070px) {
-      width: 100%;
+      width: calc(100% - 40px);
     }
 
     // @media screen and (max-width: 1050px) {
@@ -68,13 +68,13 @@
 
 @media screen and (max-width: 1450px) {
   .video-section {
-    padding: 80px 10%;
+    padding: 80px 0;
   }
 }
 
 @media screen and (max-width: 1350px) {
   .video-section {
-    padding: 80px 5%;
+    padding: 80px 0;
   }
 }
 
@@ -99,7 +99,7 @@
 
 @media screen and (max-width: 650px) {
   .video-section {
-    padding: 80px 20px;
+    padding: 80px 0;
   }
 
   .video-section__header {
