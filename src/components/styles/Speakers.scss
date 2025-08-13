@@ -3,7 +3,7 @@
 
 .speakers {
   background-color: rgba(0, 5, 16, 1);
-  padding: 120px 280px;
+  padding: 100px 280px;
   @include mixins.flex-center;
   flex-direction: row;
   align-items: flex-start;
@@ -16,6 +16,8 @@
   gap: 24px;
   text-align: left;
   width: 100%;
+  position: sticky;
+  top: 100px;
 
   h3 {
     @include mixins.h3;
@@ -46,7 +48,7 @@
 
 .speaker-item__image {
   min-height: 23rem;
-  aspect-ratio: 1/1.05;
+  aspect-ratio: 1 / 1.1;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -102,7 +104,19 @@
   }
 
   .speakers-header {
+    position: relative;
+    top: 0;
     text-align: center;
+  }
+
+  .speakers-item__wrapper {
+    grid-template-columns: repeat(2, minmax(16rem, 16rem));
+    width: fit-content;
+  }
+
+  .speaker-item__image {
+    min-height: unset;
+    aspect-ratio: 1 / 1.2;
   }
 }
 
@@ -112,8 +126,8 @@
   }
 
   .speakers-item__wrapper {
-    width: 85%;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    width: fit-content;
+    // grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 
   .speaker-item__desc {
@@ -158,12 +172,13 @@
   .speakers-item__wrapper {
     width: 100%;
     gap: 12px;
-    row-gap: 32px;
+    row-gap: 20px;
+    grid-template-columns: repeat(2, minmax(16rem, 1fr));
   }
 
   .speaker-item__image {
     // height: 180px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1.2;
   }
 
   .btn {

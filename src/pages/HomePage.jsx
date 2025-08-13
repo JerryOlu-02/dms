@@ -1,6 +1,7 @@
 import ByChrone from "../components/ByChrone";
 import Date from "../components/Date";
 import Footer from "../components/Footer";
+import Grant from "../components/Grant";
 import Hero from "../components/Hero";
 import Plans from "../components/Plans";
 import Quote from "../components/Quote";
@@ -42,6 +43,8 @@ export default function HomePage() {
       <WhyAttend />
 
       <Plans />
+
+      <Grant />
 
       <WhySponsor />
 
