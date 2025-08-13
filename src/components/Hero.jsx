@@ -6,6 +6,7 @@ import Sponsors from "../reusableComponents/Sponsors";
 import { ReactComponent as IconUp } from "../assets/icon-up.svg";
 
 import "./styles/Hero.scss";
+import CountdownTimer from "../reusableComponents/Countdown";
 
 export default function Hero({ children }) {
   return (
@@ -43,6 +44,8 @@ export default function Hero({ children }) {
         </div>
 
         {/* <Sponsors /> */}
+
+        <CountdownTimer />
       </section>
     </>
   );

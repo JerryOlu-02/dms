@@ -13,6 +13,7 @@ import StickySection from "../components/StickySection";
 import VideoSection from "../components/VideoSection";
 import WhyAttend from "../components/WhyAttend";
 import WhySponsor from "../components/WhySponsor";
+import CountdownTimer from "../reusableComponents/Countdown";
 import NavBar from "../reusableComponents/NavBar";
 import "./HomePage.scss";
 // import SectionTwo from "../components/SectionTwo";
@@ -51,6 +52,8 @@ export default function HomePage() {
       <ByChrone />
 
       <Footer />
+
+      <CountdownTimer />
     </>
   );
 }
