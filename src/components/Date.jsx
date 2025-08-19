@@ -16,7 +16,7 @@ export default function Date() {
 
           <div className="date__details__item__text">
             <span>Date</span>
-            <p>5th September, 2025 </p>
+            <p>25th September, 2025 </p>
           </div>
         </div>
 
