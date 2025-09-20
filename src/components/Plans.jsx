@@ -56,7 +56,7 @@ export default function Plans() {
 
             <p>The Starter</p>
 
-            <h4>₦10,000</h4>
+            <h4>₦25,000</h4>
 
             <p>
               Attend DMS 2.0 for live tips from Nigeria’s top e-commerce pros to
@@ -110,7 +110,7 @@ export default function Plans() {
 
             <p>Power Pair Pass</p>
 
-            <h4>₦20,000</h4>
+            <h4>₦40,000</h4>
 
             <p>
               Bring a friend and save, general admission for two to DMS 2.0’s
@@ -164,7 +164,7 @@ export default function Plans() {
 
             <p>Squad Pass</p>
 
-            <h4>₦40,000</h4>
+            <h4>₦75,000</h4>
 
             <p>
               This pass is perfect for small teams and co-founder groups or

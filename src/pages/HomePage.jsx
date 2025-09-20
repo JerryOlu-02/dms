@@ -45,7 +45,7 @@ export default function HomePage() {
 
       <Plans />
 
-      <Grant />
+      {/* <Grant /> */}
 
       <WhySponsor />
 
